@@ -1,23 +1,51 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Peter Quinn">
+    <title>Peter Quinn - Home</title>
 
-<div class="home">
+    <!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom Style overwrites -->
+    <link rel="stylesheet" href="/css/style.css">
 
-  <h1 class="page-heading">Posts</h1>
+    <!-- Scripts -->
+    
+    <!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+    <!-- End scripts -->
+	
+	</head>
+	
+	<body>
+	 <h1>Peter Quinn</h1>
+	 
+	 <!-- Nav Bar -->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+	<div class="col-sm-2">
+	 <nav>
+		<ul class="nav nav-pills nav-stacked">
+			<li role="presentation" class="nav nav-item active"><a href="#index">Home</a></li>
+			<li role ="presentation" class="nav nav-item"><a href="bio.html">Bio</a></li>
+			<li role="presentation" class="nav nav-item"><a href="projects.html">Projects</a></li>
+			<li role = "presentation" class="nav nav-item"><a href="travel.html">Travel</a></li>	 
+		</ul>
+	</nav>
 </div>
+
+	<!--end nav bar -->
+
+	<!--main body-->
+
+	<div class = "jumbotron">
+		<h1>Welcome</h1>
+		<p>This is where I share things about who I am, things I've done, and places I've been.</p>
+	</div>
+	<!-- end main body-->
+		
+	</body>

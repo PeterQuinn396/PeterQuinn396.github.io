@@ -1,0 +1,26 @@
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+    color:white;
+    background-color:#FF7777;
+    }
+	
+.nav-pills > li > a, .nav-pills > li >a:focus {
+	color:white;
+	background-color:#FF0000;
+} 
+
+.nav-pills> li > a:hover, .nav-pills > li.active > a:hover{
+	color:black;
+	background-color:white;
+}
+
+.navback{
+	background-color:red;
+}
+
+h1 {
+	color:white
+}
+body {
+	background-color:black;
+}
+

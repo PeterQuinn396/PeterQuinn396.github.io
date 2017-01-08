@@ -20,17 +20,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
 	
 	<!-- html pieces -->
-	<script>
-  function handleLoad(e) {
-    console.log('Loaded import: ' + e.target.href);
-  }
-  function handleError(e) {
-    console.log('Error loading import: ' + e.target.href);
-  }
-</script>
-
-	<link rel="import" id="navbars" href="css/navbars.html"
-	onload="handleLoad(event)" onerror="handleError(event)">
+	
+	<link rel="import" id="navbars" href="css/navbars.html">
    
    <!-- End scripts -->
 	
@@ -41,27 +32,12 @@
 	 
 	 <!-- Nav Bar -->
 	<div id="navbar-area"></div>
-	
 	<script>
-	
-	alert("started");
-	
     var link = document.querySelector('#navbars');
-	alert("link in");
-	
 	var content = link.import;
-	alert("link imported");
-	
-	var navbar = content.querySelector('div.test');
-	alert("navbar selected");
-    
-	document.querySelector('#navbar-area').appendChild(navbar.cloneNode(true));
-	alert("appended");
-	
-      
+	var navbar = content.querySelector('.navbar-main');
+	document.querySelector('#navbar-area').appendChild(navbar.cloneNode(true));   
 	</script>
-	
-	
 	<!--end nav bar -->
 
 	<!--main body-->

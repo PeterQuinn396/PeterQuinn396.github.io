@@ -10,34 +10,58 @@
     <title>Peter Quinn - Bio</title>
 
     <!-- Bootstrap CSS -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Custom Style overwrites -->
-    <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
+	
     <!-- Scripts -->
     
     <!-- Bootstrap JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
-    <!-- End scripts -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+	
+	<!-- html pieces -->
+	<script>
+  function handleLoad(e) {
+    console.log('Loaded import: ' + e.target.href);
+  }
+  function handleError(e) {
+    console.log('Error loading import: ' + e.target.href);
+  }
+</script>
+
+	<link rel="import" id="navbars" href="css/navbars.html"
+	onload="handleLoad(event)" onerror="handleError(event)">
+   
+   <!-- End scripts -->
 	
 	</head>
 	
 	<body>
-	 <h1>Peter Quinn</h1>
+	<h1>Peter Quinn</h1>
 	 
 	 <!-- Nav Bar -->
-
-	<div class="col-sm-2 navback">
-	 <nav>
-		<ul class="nav nav-pills nav-stacked">
-			<li role="presentation" class="nav nav-item"><a href="index.html">Home</a></li>
-			<li role ="presentation" class="nav nav-item active"><a href="#bio">Bio</a></li>
-			<li class="nav nav-item"><a href="projects.html">Projects</a></li>
-			<li class="nav nav-item"><a href="travel.html">Travel</a></li>	 
-		</ul>
-	</nav>
-</div>
-
+	<div id="navbar-area"></div>
+	
+	<script>
+	
+	alert("started");
+	
+    var link = document.querySelector('#navbars');
+	alert("link in");
+	
+	var content = link.import;
+	alert("link imported");
+	
+	var navbar = content.querySelector('div.test');
+	alert("navbar selected");
+    
+	document.querySelector('#navbar-area').appendChild(navbar.cloneNode(true));
+	alert("appended");
+	
+      
+	</script>
+	
+	
 	<!--end nav bar -->
 
 	<!--main body-->
@@ -51,3 +75,4 @@
 	<!-- end main body-->
 		
 	</body>
+	</html>

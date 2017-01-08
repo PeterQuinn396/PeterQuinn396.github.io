@@ -1,4 +1,25 @@
 
+
+
+ <!-- code for dyanmically inserting Nav Bar and slecting active element, could not get working 
+		due to issues with CORS for debugging-->
+		
+		<!-- html pieces, insert in header-->
+	
+	<link rel="import" id="navbars" href="css/navbars.html">
+	
+	<!-- insert in nav bar -->
+	<div id="navbar-area"></div>
+	<script>
+    var link = document.querySelector('#navbars');
+	var content = link.import;
+	var navbar = content.querySelector('.navbar-main');
+	//content.querySelector('#bio').addClass("active"); //set the bio button active
+	document.querySelector('#navbar-area').appendChild(navbar.cloneNode(true));
+	</script>
+	<!--end nav bar -->
+
+
 	 <!-- Nav Bar Main-->
 	<div class="navbar-main">
 	<div class="col-sm-2 navback">

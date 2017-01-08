@@ -19,9 +19,7 @@
     <!-- Bootstrap JS -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
 	
-	<!-- html pieces -->
 	
-	<link rel="import" id="navbars" href="css/navbars.html">
    
    <!-- End scripts -->
 	
@@ -30,18 +28,21 @@
 	<body>
 	<h1>Peter Quinn</h1>
 	 
-	 <!-- Nav Bar -->
-	<div id="navbar-area"></div>
-	<script>
-    var link = document.querySelector('#navbars');
-	var content = link.import;
-	var navbar = content.querySelector('.navbar-main');
-	content.querySelector('#bio').addClass("active"); //set the bio button active
-	document.querySelector('#navbar-area').appendChild(navbar.cloneNode(true));
-	
-	</script>
-	<!--end nav bar -->
+	 <!-- Nav Bar Main-->
+	<div class="navbar-main">
+	<div class="col-sm-2 navback">
+	 <nav>
+		<ul class="nav nav-pills nav-stacked">
+			<li role="presentation" class="nav nav-item" id="home"><a href="#index">Home</a></li>
+			<li role ="presentation" class="nav nav-item active" id="bio"><a href="bio.html">Bio</a></li>
+			<li role="presentation" class="nav nav-item"><a href="projects.html">Projects</a></li>
+			<li role = "presentation" class="nav nav-item"><a href="travel.html">Travel</a></li>	 
+		</ul>
+	</nav>
+	</div>
+	</div>
 
+	<!--end main nav bar -->
 	<!--main body-->
 	<div class="container">
 	<div class="col-sm-10">

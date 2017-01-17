@@ -17,10 +17,19 @@
 	background-color:red;
 }
 
+.body-text{
+	background-color:white;
+	color:black;
+}
+
+#carousel-projects{
+	size:5%;
+}
 h1 {
 	color:white
 }
 body {
 	background-color:black;
 }
+
 

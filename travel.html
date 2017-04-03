@@ -14,6 +14,12 @@
     <!-- Custom Style overwrites -->
     <link rel="stylesheet" href="css/style.css">
 
+	<style>
+	#map{
+	height: 500px;
+	width:100%;
+	}
+	</style>
     <!-- Scripts -->
     
     <!-- Bootstrap JS -->
@@ -53,13 +59,91 @@
 	</div>
 	
 	<div class="jumbotron">
-	<h3><ul>
-				<li>content coming soon</li>
-		</ul>
-	</h3>
-	</div>
 
+	<div id="map"></div>
+	<script>
+      function initMap() {      
+		
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 2,
+		center: {lat:40.716737, lng:-39.765353}
+        });
+		var importantPin = {
+							url: 'images/simpleBlueIcon.svg',
+							scaledSize: new google.maps.Size(53,46)	
+						  };
+
+		//currently looks awful
+		var homePin = {
+						url: 'images/home.png',
+						scaledSize: new google.maps.Size(53,46)	
+						};
+					
+		
+		//home, maybe put a speacial icon?
 	
+		var mtl = {lat:45.5017, lng:-73.5673};
+        var marker = new google.maps.Marker({
+          position: mtl,
+          map: map,
+		title: "Home",
+		icon:importantPin
+
+        });	
+		
+
+		//These will appear as plain icons
+		var places = [
+		["Arizona", 33.4484, -112.0740],
+		["Cancun", 21.1619, -86.8515],
+		["Saskatoon",52.1332, -106.6700],
+		["Loon Lake", 54.0246945,-109.220338],
+		["Honolulu", 21.3069, -157.8583],
+		["Costa Rica", 9.7489, -83.7534],
+		["Peurto Rico", 18.2208, -66.5901],
+		["Wildwood", 38.9918, -74.8149],
+		["Myrtle Beach", 33.6891, -78.8867],
+		["Outer Banks", 35.5585, -75.4665],
+		["Orlando", 28.5383, -81.3792],
+		["Key Largo", 25.0865, -80.4473],
+		["Loon Mountain", 44.0360, -71.6214],
+		["New York", 40.7128, -74.0059],
+		["Ottawa", 45.4215, -75.6972],
+		["Toronto", 43.6532, -79.3832]
+		];
+		
+		//These places will have speacial icons and pages linked to them 
+		var importantPlaces = [
+		["Belize", 17.1899, -88.4976],
+		["Kaiserslautern", 49.4401, 7.7491]
+		];
+		
+		for (var i = 0; i < places.length; i++) {
+			var place = places[i];
+			var marker = new google.maps.Marker({
+			  position: {lat: place[1], lng: place[2]},
+			  map: map,
+			  title: place[0],
+			
+			});
+		}
+
+		for (var i = 0; i < importantPlaces.length; i++) {
+			var importantPlace = importantPlaces[i];
+			var marker = new google.maps.Marker({
+			  position: {lat: importantPlace[1], lng: importantPlace[2]},
+			  map: map,
+			  title: importantPlace[0],
+			icon: importantPin,
+
+			});
+		}
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHI0OxxVC-JPrVpTq7amcW1DyN1Dci3Rc&callback=initMap">
+    </script>
+	</div>
 	</div>
 	</div>
 	<!-- end main body-->

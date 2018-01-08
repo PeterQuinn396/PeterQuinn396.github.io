@@ -58,11 +58,32 @@
 	
 	<div class="body-text">
 		<div class="row">
-			<img src="finalSystem.jpg" class="center-block img-responsive img-rounded" alt="robot" style="width: 600px; padding: 25px">
+			<img src="finalSystem.jpg" class="center-block img-responsive img-rounded" alt="PCR System" style="width: 600px; padding: 25px">
 		</div>
 	<div class="container">
 	<div class="col-sm-9">
-		<p>Content write up coming soon. In the mean time, here are the posters for project.</p>
+		<p>During the summer of 2015, I had the opportunity to conduct a research project under the supervision of Professor Andrew Kirk and Dr. Philip J. Roche 
+		as part of the Summer Undergraduate Research Experience (SURE) at McGill University.</p>
+		<p>The ultimate goal of the project was the development of a novel <a href="https://en.wikipedia.org/wiki/Polymerase_chain_reaction">PCR Machine</a> that could complete a DNA replication in less than a minute. This, 
+		when combined with DNA based sensors, would allow for the rapid detection of various illness and be a useful diagnostic tool for doctors. </p>
+		<p>The heating mechanism for the PCR reaction was gold nanorods and lasers. Gold nanorods were inserted into the PCR solution and a laser was shone 
+		on the reaction vessel. The gold nanorods absorbed the energy from the laser and then radiated it as heat. This allowed for very rapid heating.</p>
+		<p>The first task of the project was to develop a procedure to produce large quantities of nanorods with a peak absorbance at the frequency of the laser. 
+		This was done by reviewing the literature associated with the production of gold nanorods and experimentation. </p>
+		<p>Once the gold nanorods had been produced, the next task was to begin building the system itself. A double sample holder was designed using CAD 
+		software and then 3D printed. The sample holder also had a space for a fan, to help to cool the sample. The holder was mounted on an optical 
+		breadboard with the laser and a beam splitter system. </p>
+		<p>The circuitry for the system was worked on next. The system was controlled using an Arduino Uno microcontroller. The Arduino allowed the laser and 
+		fan to be turned on and off, control the power, measure the temperature of the samples via thermopiles mounted on the sample holder and the signal from 
+		a homemade lock in amplifier. </p>
+		<p>The lock in amplifier was connected to a simple absorbance measuring system built into the sample holder and was used to eliminate noise in the signal produced 
+		by a photodiode. Light from a low power laser was passed through the sample perpendicularly to the heating laser and onto a photodiode. The signal produced by the 
+		photodiode was proportional to the transmission of the sample at the frequency of the low power laser. This system allowed a shift in the absorbance spectrum of the sample,
+		which would result from DNA sensors included in the sample vessel in the final PCR device. </p>
+		<p>Further steps in the development would have been to implement a PID controller to control the laser and fan (the heating and cooling) to achieve rapid 
+		thermocycling needed for the PCR reaction, and to functionalize the gold nanoparticles with DNA based sensors, but unfortunately the summer was coming to a close. </p>
+		<p>At the end of the summer, a research poster was presented to members of the university, alumni and guests at a poster presentation. The posters presented 
+		are provided here (this project was done in a team of two, so we had two posters).</p>
 		<p><a href="Poster 1.pdf">Poster 1</a></p>
 		<p><a href="Poster 2.pdf">Poster 2</a></p>
 		

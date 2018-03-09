@@ -25,8 +25,9 @@
 #carousel-projects{
 	size:5%;
 }
-h1 {
-	color:white
+.name {
+	color:white;
+	padding-left:15px;
 }
 body {
 	background-color:#44434c;

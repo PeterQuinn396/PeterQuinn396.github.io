@@ -12,7 +12,16 @@
 	color:black;
 	background-color:white;
 }
+.nav-link {
+	color:white;
+	font-size:18px;
+	padding:30px;
+}
 
+.nav-item >li.active > a, .nav-item > li.active>a:focus,{
+	 color:grey;
+    background-color:#FF7777;
+}
 .navback{
 	background-color:red;
 }
@@ -20,11 +29,13 @@
 .body-text{
 	background-color:white;
 	color:black;
+	padding-bottom:15px;
 }
 
 #carousel-projects{
 	size:5%;
 }
+
 .name {
 	color:white;
 	padding-left:15px;

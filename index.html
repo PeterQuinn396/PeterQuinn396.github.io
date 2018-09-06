@@ -11,12 +11,21 @@
     <title>Peter Quinn - Home</title>
 
     <!-- Bootstrap CSS -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Custom Style overwrites -->
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+  <!-- Custom Style overwrites -->
     <link rel="stylesheet" href="css/style.css">
-	 
+	
+	 <style>
+	#map{
+	height: 500px;
+	width:100%;
+	}
+	</style>
     <!-- Scripts -->
-    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Bootstrap JS -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
     <!-- End scripts -->
@@ -24,33 +33,304 @@
 	</head>
 	
 	<body>
-	 <h1 class="name">Peter Quinn</h1>
+	 <h1 class="name" id="home">Peter Quinn</h1>
 	 
 	 <!-- Nav Bar -->
-
-	<div class="col-sm-2 navback">
-	 <nav>
-		<ul class="nav nav-pills nav-stacked">
-			<li role="presentation" class="nav nav-item active"><a href="#index">Home</a></li>
-			<li role ="presentation" class="nav nav-item"><a href="bio.html">Bio</a></li>
-			<li role="presentation" class="nav nav-item"><a href="projects.html">Projects</a></li>
-			<li role = "presentation" class="nav nav-item"><a href="travel.html">Travel</a></li>	 
+	
+	 <nav class="navbar navbar-expand-lg navback">
+				
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#bio">About</a>
+		  </li>
+		   <li class="nav-item">
+			<a class="nav-link" href="#projects">Projects</a>
+		  </li>
+		   <li class="nav-item">
+			<a class="nav-link" href="#travel">Travel</a>
+		  </li>		 
 		</ul>
 	</nav>
-</div>
+
 
 	<!--end nav bar -->
 
 	<!--main body-->
+			
+	<!--bio-->
+	<div class="container-fluid" id="bio" style="padding-bottom:20px">
+	<div class = "jumbotron" style="background-image:url(images/mcgill.jpg); background-size:fit; height:600px">
+		
+		
+	</div>
+	<div class="container">	
+		
+		<div class="col-sm-12 body-text center">
+		<h2>About me</h2>
+		<h4 style="padding-top:15px">My name is Peter Quinn. I study Honours Electrical Engineering at McGill University. 
+			This is my website, where I keep a portfolio of projecs that I've worked on and things
+			that I've done. 
+		</h4>
+	
+		<h4>I've been a student at McGill university since Fall 2015, and I am due to graduate in Winter of 2019.
+			I chose to study electrical engineering because I have always enjoyed working with and 
+			learning about math, physics, and computers. The electrical engineering program at McGill combines all of those
+			subjects. I opted for the honours program since it will allow me to do a thesis research project as my capstone project. 
+			I plan to pursue graduate studies after my undergrad so this seemed like a good opportunity to learn and gain 
+			experience in a research setting early, in addtion to the research internships I have done. 
+		</h4>
+	
+		<h4>Here is a copy of my CV: <a href="PeterQuinnCVMaster_F2018_web.pdf">PeterQuinnCVMaster_F2018_web.pdf</a></h4>
+
+		<h4>Here are some places where you find more information about me or things I've worked on</h4>
+			<p>
+				<a class="btn btn-social-icon btn-linkedin" target="_blank" href="https://www.linkedin.com/in/peter-quinn-50b016134">
+					<span class="fa fa-linkedin fa-3x"></span>
+				</a>
+			<a class="btn btn-social-icon btn-github" target="_blank" href="https://github.com/PeterQuinn396">
+					<span class="fa fa-github fa-3x"></span>
+				</a>
+			</p>
+
+		</div>
+		</div>
+	</div>
+	<!--end bio-->
+	
+	<!--projects-->
+	
+	<div class="container-fluid" id="projects" >
+	<div class = "jumbotron" style="background-image:url(http://radszuweit.com/wp-content/uploads/2015/05/design-projects.jpg); background-size:cover">
+		<h2>Projects</h2>
+	</div>
+	</div>
+	
+		<!--main body-->
+	<div class="container" style="padding-bottom:20px">
+	<div class="col-sm-12">
+	<div class = "jumbotron" style="background-image:url(http://radszuweit.com/wp-content/uploads/2015/05/design-projects.jpg); background-size:cover">
+				
+	<!--carousel-->
+	
+	<div id="carousel-projects" class="carousel slide" style="width: 90%; margin: 0 auto" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-projects" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-projects" data-slide-to="1"></li>
+	<li data-target="#carousel-projects" data-slide-to="2"></li>
+   
+  </ol>
+
+  <!-- Wrapper for slides -->
+ 
+  <div class="carousel-inner" role="listbox">
+  
+    <div class="item active">
+      <a href="pages/projects/school/DPM/dpm.html"><img src="pages/projects/school/DPM/robotSideView.png" alt="robot"></a>
+      <div class="carousel-caption">
+       <h4>Autonomous Robot</p>
+      </div>
+    </div>
+	
+	 <div class="item">
+     <a href="pages/projects/research/DAADRISE2017/daadRise.html"> <img src="pages/projects/research/DAADRISE2017/Picture1Crop3.png" alt="antenna" align="middle"></a>
+      <div class="carousel-caption">
+         <h4 style="color:black">DAAD RISE 2017</p>
+      </div>
+    </div>
+	
+    <div class="item">
+     <a href="pages/projects/research/SURE2016/pcrSystem.html"> <img src="pages/projects/research/SURE2016/finalSystem.jpg" alt="pcrSystem"></a>
+      <div class="carousel-caption">
+         <h4>SURE 2016</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-projects" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-projects" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+	<!-- end carousel -->
+		
+	<div class="body-text">
 	<div class="container">
-	<div class="col-sm-10">
-	<div class = "jumbotron" style="background-image:url(images/mountains.jpg); background-size:cover">
-		<h1>Welcome</h1>
-		<p>This is where I share things about who I am, things I've done, and places I've been.</p>
-		<p>I recommend checking out my <a href="projects.html">projects page</a> (that's where all the cool stuff is).</p>
+	<div class="col-sm-9">
+		<br>
+		<h2>Research Projects</h2>
+			<h4>
+			<ul>
+				<li class><a href="pages/projects/research/DAADRISE2017/daadRise.html">DAAD RISE: Development of Novel Antennas for Mobile Communication (Summer 2017)</a></li>
+				<li class><a href="pages/projects/research/SURE2016/pcrSystem.html">SURE: Rapid PCR using Gold Nanorods and Lasers (Summer 2016)</a></li>	
+			</ul>
+			</h4>
+		<h2>School Projects</h2>
+			<h4>
+			<ul>
+				<li class><a href="pages/projects/school/DSD/dsd.html">Blackjack on an FPGA (Fall 2017)</a></li>
+				<li class><a href="pages/projects/school/DPM/dpm.html">Automous Robot for Design Principles and Methods Class (Winter 2016)</a></li>
+				<li class><a href="pages/projects/school/Belize/belize.html">Marine Biology in Belize (Winter 2015)</a></li>
+			</ul>
+			</h4>
+		<h2>Personal Projects</h2>
+			<h4>
+				<ul>
+					<li class><a href="https://github.com/PeterQuinn396/SC2-AI">PySC2 Reinforcement Learning AI (Summer 2018 - )</a></li>
+					<li class><a href="https://github.com/PeterQuinn396/assistant">Raspberri Pi Google Assistant (Summer 2018 - )</a></li>
+					<li class><a href="pages/projects/personal/website/website.html">This Website (Winter 2017 - )</a></li>
+				</ul>
+			</h4>
+		
+	</div>
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	
+	<!--end projects-->	
+	
+	<!--travel-->	
+	<!--main body-->
+	<div class="container-fluid">
+
+	<div id="travel" class = "jumbotron" style="background-image:url(http://arizona.adl.org/files/2013/09/arizona-header-cropped.jpg); background-size:cover">
+		<h1 style="color:black">Travel</h1>
+	</div>
+	</div>
+	<div class="container">
+	<div class = "col-sm-12">
+	<div class="jumbotron">
+
+	<div id="map"></div>
+	<script>
+      function initMap() {      
+		
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 2,
+		center: {lat:40.716737, lng:-39.765353}
+        });
+		var importantPin = {
+							url: 'images/simpleBlueIcon.svg',
+							scaledSize: new google.maps.Size(53,46)	
+						  };
+
+		//homePin looks terrible on map
+		var homePin = {
+						url: 'images/home.png',
+						scaledSize: new google.maps.Size(53,46)	
+						};
+					
+		
+		//home, maybe put a speacial icon?
+	
+		var mtl = {lat:45.5017, lng:-73.5673};
+        var marker = new google.maps.Marker({
+          position: mtl,
+          map: map,
+		title: "Home",
+		icon:importantPin
+
+        });	
+		
+
+		//These will appear as plain icons
+		var places = [
+		
+		//NA
+		["Arizona", 33.4484, -112.0740],
+		["Cancun", 21.1619, -86.8515],
+		["Saskatoon",52.1332, -106.6700],
+		["Loon Lake", 54.0246945,-109.220338],
+		["Honolulu", 21.3069, -157.8583],
+		["Costa Rica", 9.7489, -83.7534],
+		["Puerto Rico", 18.2208, -66.5901],
+		["Wildwood", 38.9918, -74.8149],
+		["Myrtle Beach", 33.6891, -78.8867],
+		["Outer Banks", 35.5585, -75.4665],
+		["Orlando", 28.5383, -81.3792],
+		["Key Largo", 25.0865, -80.4473],
+		["Loon Mountain", 44.0360, -71.6214],
+		["New York", 40.7128, -74.0059],
+		["Ottawa", 45.4215, -75.6972],
+		["Toronto", 43.6532, -79.3832],
+		["Banff", 51.1784,-115.5708],
+		["Edmonton", 53.5444, -113.4909],
+		["Jasper", 52.8737, -118.0814],
+		["Calgary", 51.0486, -114.0708],
+		
+		//EU
+		["Prague", 50.0755, 14.4378],
+		["Berlin", 52.5200, 13.4050],
+		["Hamburg", 53.5511, 9.9937],
+		["Munich", 48.1351, 11.5820],
+		["Cologne", 50.9375, 6.9603],
+		["Heidelberg", 49.3988, 8.6724],
+		["Dresden", 51.0504, 13.7373],
+		["Frankfurt", 50.1109, 8.6821],
+		["Stuttgart", 48.7758, 9.1829],
+		["Paris", 48.8566 , 2.3522],
+		["Strasbourg", 48.5734, 7.7521],
+		["Brussels", 50.8503, 4.3517],
+		["Luxembourg", 49.6116, 6.1319],
+		["Salzburg", 47.8095, 13.0550],
+		["Amsterdam", 52.3702, 4.8952],
+		["Rotterdam", 51.9244, 4.4777]
+		];
+		
+		//These places will have special icons and pages linked to them 
+		var importantPlaces = [
+		["Belize", 17.1899, -88.4976],
+		["Kaiserslautern", 49.4401, 7.7491]
+		];
+		
+		for (var i = 0; i < places.length; i++) {
+			var place = places[i];
+			var marker = new google.maps.Marker({
+			  position: {lat: place[1], lng: place[2]},
+			  map: map,
+			  title: place[0],
+			
+			});
+		}
+
+		for (var i = 0; i < importantPlaces.length; i++) {
+			var importantPlace = importantPlaces[i];
+			var marker = new google.maps.Marker({
+			  position: {lat: importantPlace[1], lng: importantPlace[2]},
+			  map: map,
+			  title: importantPlace[0],
+			icon: importantPin,
+
+			});
+		}
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHI0OxxVC-JPrVpTq7amcW1DyN1Dci3Rc&callback=initMap">
+    </script>
 	</div>
 	</div>
 	</div>
 	<!-- end main body-->
-		
+	
+	<!--end  travel-->
+	
+	<!-- end main body-->
+		<footer class="footer" style="padding-top:75px">
+      <div class="container">
+        <p class="text-muted"></p>
+      </div>
+    </footer>
 	</body>

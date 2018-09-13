@@ -10,12 +10,10 @@
     <meta name="author" content="Peter Quinn">
     <title>Peter Quinn - Home</title>
 
-    <!-- Bootstrap CSS -->
-	
+    <!-- Bootstrap CSS -->	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-  <!-- Custom Style overwrites -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+	<!-- Custom Style overwrites -->
     <link rel="stylesheet" href="css/style.css">
 	
 	 <style>
@@ -27,19 +25,21 @@
     <!-- Scripts -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Bootstrap JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- End scripts -->
 	
 	</head>
 	
 	<body>
-	 <h1 class="name" id="home">Peter Quinn</h1>
+	 <div class="nav-spacer" id="home"></div>
 	 
 	 <!-- Nav Bar -->
 	
-	 <nav class="navbar navbar-expand-lg navback">
-				
-		<ul class="navbar-nav mr-auto">
+	 <nav class="navbar fixed-top navbar-expand-lg navback" style="height:70px">	
+		<a class="navbar-brand" style="color:white; font-size:25px">Peter Quinn</a>	 
+		<ul class="navbar-nav mr-auto">				
 		  <li class="nav-item">
 			<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
 		  </li>
@@ -54,38 +54,36 @@
 		  </li>		 
 		</ul>
 	</nav>
-
+	
 
 	<!--end nav bar -->
 
 	<!--main body-->
 			
 	<!--bio-->
-	<div class="container-fluid" id="bio" style="padding-bottom:20px">
-	<div class = "jumbotron" style="background-image:url(images/mcgill.jpg); background-size:fit; height:600px">
-		
-		
-	</div>
-	<div class="container">	
-		
-		<div class="col-sm-12 body-text center">
-		<h2>About me</h2>
-		<h4 style="padding-top:15px">My name is Peter Quinn. I study Honours Electrical Engineering at McGill University. 
+	<div id="bio" class="nav-spacer"></div>
+	
+	<div class="container-fluid"  style="padding-bottom:15px">
+	<div class = "jumbotron" style="background-image:url(images/mcgill.jpg);background-size:fit">	
+	<div class="container">
+	<div  class="col-sm-12 body-text center">
+		<h2 style="padding-top:15px">About me</h2>
+		<p style="padding-top:10px">My name is Peter Quinn. I study Honours Electrical Engineering at McGill University. 
 			This is my website, where I keep a portfolio of projecs that I've worked on and things
 			that I've done. 
-		</h4>
+		</p>
 	
-		<h4>I've been a student at McGill university since Fall 2015, and I am due to graduate in Winter of 2019.
+		<p>I've been a student at McGill university since Fall 2015, and I am due to graduate in Winter of 2019.
 			I chose to study electrical engineering because I have always enjoyed working with and 
 			learning about math, physics, and computers. The electrical engineering program at McGill combines all of those
 			subjects. I opted for the honours program since it will allow me to do a thesis research project as my capstone project. 
 			I plan to pursue graduate studies after my undergrad so this seemed like a good opportunity to learn and gain 
 			experience in a research setting early, in addtion to the research internships I have done. 
-		</h4>
+		</p>
 	
-		<h4>Here is a copy of my CV: <a href="PeterQuinnCVMaster_F2018_web.pdf">PeterQuinnCVMaster_F2018_web.pdf</a></h4>
+		<p>Here is a copy of my CV: <a href="PeterQuinnCVMaster_F2018_web.pdf">PeterQuinnCVMaster_F2018_web.pdf</a></p>
 
-		<h4>Here are some places where you find more information about me or things I've worked on</h4>
+		<p>Here are some places where you find more information about me or things I've worked on</p>
 			<p>
 				<a class="btn btn-social-icon btn-linkedin" target="_blank" href="https://www.linkedin.com/in/peter-quinn-50b016134">
 					<span class="fa fa-linkedin fa-3x"></span>
@@ -95,123 +93,114 @@
 				</a>
 			</p>
 
-		</div>
-		</div>
+		</div>	
+	</div>	
+	</div>
 	</div>
 	<!--end bio-->
 	
 	<!--projects-->
-	
-	<div class="container-fluid" id="projects" >
-	<div class = "jumbotron" style="background-image:url(http://radszuweit.com/wp-content/uploads/2015/05/design-projects.jpg); background-size:cover">
-		<h2>Projects</h2>
+	<div id="projects" class="nav-spacer"></div>
+	<div class="container-fluid">
+	<div class = "jumbotron" style="background:white">
+		<h2 class="text-center">Projects</h2>
 	</div>
 	</div>
 	
 		<!--main body-->
 	<div class="container" style="padding-bottom:20px">
-	<div class="col-sm-12">
-	<div class = "jumbotron" style="background-image:url(http://radszuweit.com/wp-content/uploads/2015/05/design-projects.jpg); background-size:cover">
 				
-	<!--carousel-->
-	
-	<div id="carousel-projects" class="carousel slide" style="width: 90%; margin: 0 auto" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-projects" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-projects" data-slide-to="1"></li>
-	<li data-target="#carousel-projects" data-slide-to="2"></li>
-   
-  </ol>
-
-  <!-- Wrapper for slides -->
- 
-  <div class="carousel-inner" role="listbox">
-  
-    <div class="item active">
-      <a href="pages/projects/school/DPM/dpm.html"><img src="pages/projects/school/DPM/robotSideView.png" alt="robot"></a>
-      <div class="carousel-caption">
-       <h4>Autonomous Robot</p>
-      </div>
-    </div>
-	
-	 <div class="item">
-     <a href="pages/projects/research/DAADRISE2017/daadRise.html"> <img src="pages/projects/research/DAADRISE2017/Picture1Crop3.png" alt="antenna" align="middle"></a>
-      <div class="carousel-caption">
-         <h4 style="color:black">DAAD RISE 2017</p>
-      </div>
-    </div>
-	
-    <div class="item">
-     <a href="pages/projects/research/SURE2016/pcrSystem.html"> <img src="pages/projects/research/SURE2016/finalSystem.jpg" alt="pcrSystem"></a>
-      <div class="carousel-caption">
-         <h4>SURE 2016</p>
-      </div>
-    </div>
-    
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-projects" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-projects" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-	<!-- end carousel -->
+		<!--carousel-->
 		
+	  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img class="d-block w-100" src="pages/projects/school/DPM/robotSideView.png" alt="robot">
+		  <div class="carousel-caption d-none d-md-block">
+			<h5>Automous Robot</h5>
+			</div>
+		</div>
+		
+		<div class="carousel-item">
+		  <img class="d-block w-100" src="pages/projects/research/DAADRISE2017/Picture1Crop3.png" alt="antenna">
+		  <div class="carousel-caption d-none d-md-block">
+			<h5 style="color:black">DAAD RISE 2017</h5>
+			</div>
+		</div>
+		
+		<div class="carousel-item">
+		  <img class="d-block w-100" src="pages/projects/research/SURE2016/finalSystem.jpg" alt="pcr">
+		  <div class="carousel-caption d-none d-md-block">
+			<h5>SURE 2016</h5>
+			</div>
+		</div>
+	  </div>
+	  
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	  </a>
+	</div>
+	</div>
+	<!-- end carousel -->
+	
+	<div class="container">
 	<div class="body-text">
 	<div class="container">
-	<div class="col-sm-9">
+	
 		<br>
-		<h2>Research Projects</h2>
-			<h4>
+		<h3>Research Projects</h3>
+			<h6>
 			<ul>
 				<li class><a href="pages/projects/research/DAADRISE2017/daadRise.html">DAAD RISE: Development of Novel Antennas for Mobile Communication (Summer 2017)</a></li>
 				<li class><a href="pages/projects/research/SURE2016/pcrSystem.html">SURE: Rapid PCR using Gold Nanorods and Lasers (Summer 2016)</a></li>	
 			</ul>
-			</h4>
-		<h2>School Projects</h2>
-			<h4>
+			</h6>
+		<h3>School Projects</h3>
+			<h6>
 			<ul>
 				<li class><a href="pages/projects/school/DSD/dsd.html">Blackjack on an FPGA (Fall 2017)</a></li>
 				<li class><a href="pages/projects/school/DPM/dpm.html">Automous Robot for Design Principles and Methods Class (Winter 2016)</a></li>
 				<li class><a href="pages/projects/school/Belize/belize.html">Marine Biology in Belize (Winter 2015)</a></li>
 			</ul>
-			</h4>
-		<h2>Personal Projects</h2>
-			<h4>
+			</h6>
+		<h3>Personal Projects</h3>
+			<h6>
 				<ul>
 					<li class><a href="https://github.com/PeterQuinn396/SC2-AI">PySC2 Reinforcement Learning AI (Summer 2018 - )</a></li>
 					<li class><a href="https://github.com/PeterQuinn396/assistant">Raspberri Pi Google Assistant (Summer 2018 - )</a></li>
 					<li class><a href="pages/projects/personal/website/website.html">This Website (Winter 2017 - )</a></li>
 				</ul>
-			</h4>
+			</h6>
 		
+	
 	</div>
 	</div>
 	</div>
 	
-	</div>
-	</div>
 	
 	<!--end projects-->	
 	
 	<!--travel-->	
-	<!--main body-->
+	
+	<div id="travel" style="padding-bottom:70px"></div>
 	<div class="container-fluid">
 
 	<div id="travel" class = "jumbotron" style="background-image:url(http://arizona.adl.org/files/2013/09/arizona-header-cropped.jpg); background-size:cover">
-		<h1 style="color:black">Travel</h1>
+		<h1 class="text-center" style="color:black">Travel</h1>
 	</div>
 	</div>
+	
 	<div class="container">
-	<div class = "col-sm-12">
-	<div class="jumbotron">
 
 	<div id="map"></div>
 	<script>
@@ -321,8 +310,8 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHI0OxxVC-JPrVpTq7amcW1DyN1Dci3Rc&callback=initMap">
     </script>
 	</div>
-	</div>
-	</div>
+	
+	
 	<!-- end main body-->
 	
 	<!--end  travel-->

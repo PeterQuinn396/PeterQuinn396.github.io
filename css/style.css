@@ -15,15 +15,25 @@
 .nav-link {
 	color:white;
 	font-size:18px;
-	padding:30px;
+	padding:35px;
+}
+
+.nav-link:focus, .nav-link:hover{
+	color:black;   
 }
 
 .nav-item >li.active > a, .nav-item > li.active>a:focus,{
 	 color:grey;
     background-color:#FF7777;
 }
+
+
 .navback{
 	background-color:red;
+}
+
+.nav-spacer{	
+	padding-bottom:70px;
 }
 
 .body-text{
@@ -32,14 +42,6 @@
 	padding-bottom:15px;
 }
 
-#carousel-projects{
-	size:5%;
-}
-
-.name {
-	color:white;
-	padding-left:15px;
-}
 body {
 	background-color:#44434c;
 }

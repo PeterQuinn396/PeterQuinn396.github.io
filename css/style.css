@@ -32,8 +32,15 @@
 	background-color:red;
 }
 
-.nav-spacer{	
-	padding-bottom:70px;
+.nav-spacer{		
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+}
+
+.carousel-inner img {
+  margin: auto;
 }
 
 .body-text{

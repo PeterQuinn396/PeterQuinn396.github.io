@@ -33,6 +33,10 @@
 }
 
 .nav-spacer{		
+    padding-bottom:80px;
+}
+
+.nav-snap{		
     display: block;
     position: relative;
     top: -70px;

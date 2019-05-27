@@ -25,16 +25,23 @@
 	
 	</head>
 	
-	<body>
-	 	 
-	 <!-- Nav Bar -->
+	<body>	 
+	
 	 
 	 <div class="nav-spacer" id="top"></div>
 	 
 	 <!-- Nav Bar -->
 	
-	 <nav class="navbar fixed-top navbar-expand-sm navback" style="height:70px">	
+	 <nav class="navbar fixed-top navbar-expand-sm navbar-toggler navbar-dark navback" >	
 		<a class="navbar-brand" style="color:white; font-size:25px">Peter Quinn</a>	 
+		
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav mr-auto">				
 		  <li class="nav-item">
 			<a class="nav-link" href="../../../../index.html#home">Home <span class="sr-only">(current)</span></a>
@@ -49,6 +56,7 @@
 			<a class="nav-link" href="../../../../index.html#travel">Travel</a>
 		  </li>		 
 		</ul>
+		</div>
 	</nav>	
 
 	 

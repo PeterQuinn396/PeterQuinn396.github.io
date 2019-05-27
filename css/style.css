@@ -12,13 +12,15 @@
 	color:black;
 	background-color:white;
 }
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
 	color:white;
 	font-size:18px;
-	padding:35px;
+	padding-top:22px;
+	padding-bottom:22px;
 }
 
-.nav-link:focus, .nav-link:hover{
+
+.navbar-dark .navbar-nav .nav-link:focus, .nav-link:hover{
 	color:black;   
 }
 

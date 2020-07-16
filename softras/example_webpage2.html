@@ -1,0 +1,172 @@
+<html>
+<head>
+<style>
+td {text-align:center; valign='center'}
+table {border-collapse: collapse;}
+tr {border-bottom: solid black;
+	border-width: 2px}
+tr:first-child {
+  border-top: none;
+}
+tr:last-child {
+  border-bottom: none;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+	<td>
+		Description
+	</td>
+	<td>
+		Initialization
+	</td>
+	<td>
+		Optimized Result
+	</td>
+	<td>
+		Target
+	</td>
+	<td>
+		Initial Absolute Difference 
+	</td>
+	<td>
+		Final Absolute Difference
+	</td>
+	<td>
+		Optimization Process (click to play video)
+	</td>		
+</tr>
+
+<!---
+New stuff
+--->
+<tr>
+	<td>
+		Adjust the aperture size of the camera.
+	</td>	
+	<td>
+		<img src="aperture/start.png">
+	</td>
+	<td>
+		<img src="aperture/final.png">
+	</td>
+	<td>
+		<img src="aperture/target.png">
+	</td>
+	<td>
+		<img src="aperture/delta_start.png"><br>
+		Inital RMS Error: 0.12583082914352417
+	</td>
+	<td>
+		<img src="aperture/delta_final.png"><br>
+		Final RMS Error: 0.08462529629468918
+	</td>
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="aperture/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+<tr>
+	<td>
+		Adjust the depth of field (focal plane) of the camera.
+	</td>	
+	<td>
+		<img src="depth of field/start.png">
+	</td>
+	<td>
+		<img src="depth of field/final.png">
+	</td>
+	<td>
+		<img src="depth of field/target.png">
+	</td>
+	<td>
+		<img src="depth of field/delta_start.png"><br>
+		Inital RMS Error: 0.12531845271587372
+	</td>
+	<td>
+		<img src="depth of field/delta_final.png"><br>
+		Final RMS Error:  0.08418095111846924
+	</td>
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="depth of field/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+<tr>
+	<td>
+		Optimize the velocity of the object in the scene to match the reference.
+	</td>	
+	<td>
+		<img src="velocity1/start.png">
+	</td>
+	<td>
+		<img src="velocity1/final.png">
+	</td>
+	<td>
+		<img src="velocity1/target.png">
+	</td>
+	<td>
+		<img src="velocity1/delta_start.png"><br>
+		Inital RMS Error: ---
+	</td>
+	<td>
+		<img src="velocity1/delta_final.png"><br>
+		Final RMS Error: ---
+	</td>
+	<td>
+		<video width="400" height="400" autoplay loop controls>
+		  <source src="velocity1/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+
+<tr>
+	<td>
+		Optimize the velocity of the object in the scene to match the reference.
+	</td>	
+	<td>
+		<img src="velocity2/start.png">
+	</td>
+	<td>
+		<img src="velocity2/final.png">
+	</td>
+	<td>
+		<img src="velocity2/target.png">
+	</td>
+	<td>
+		<img src="velocity2/delta_start.png"><br>
+		Inital RMS Error: ---
+	</td>
+	<td>
+		<img src="velocity2/delta_final.png"><br>
+		Final RMS Error: ---
+	</td>
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="velocity2/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+<!---
+End new stuff
+--->
+
+
+</table>
+</body>
+</html>

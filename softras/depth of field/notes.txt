@@ -1,0 +1,3 @@
+Start: 16
+Final: 11.9815
+Target: 12

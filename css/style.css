@@ -50,10 +50,31 @@
 }
 
 .body-text{
-	background-color:white;
+	background-color:#f9f9f9;
 	color:black;
 	padding-bottom:15px;
 }
+
+.project-img{
+	height: 250px;
+	overflow: hidden;
+	
+}
+
+.project-img img{
+	max-width:100%;
+	max-height:100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.project-entry {
+padding-top:15px;	
+}
+.project-entry>h4>a{
+	color:black;
+}
+
 
 body {
 	background-color:#44434c;

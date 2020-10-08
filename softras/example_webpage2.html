@@ -3,6 +3,7 @@
 <style>
 td {text-align:center; valign='center'}
 table {border-collapse: collapse;}
+
 tr {border-bottom: solid black;
 	border-width: 2px}
 tr:first-child {
@@ -11,7 +12,13 @@ tr:first-child {
 tr:last-child {
   border-bottom: none;
 }
+
+.line {
+    border-bottom: 40px solid black;
+}
+
 </style>
+
 </head>
 <body>
 <table>
@@ -38,6 +45,139 @@ tr:last-child {
 		Optimization Process (click to play video)
 	</td>		
 </tr>
+
+<!---
+Oct 6 stuff
+--->
+<tr>
+	<td>
+		Learning a texture that is off screen and all that is visible from the camera is a reflection.
+	</td>	
+	<td>
+		<img src="indirect_texture/start.png">
+	</td>
+	<td>
+		<img src="indirect_texture/final.png">
+	</td>
+	<td>
+		<img src="indirect_texture/target.png">
+	</td>
+	<td>
+		<img width="128" height="128" src="indirect_texture/tree.jpg"><br>
+		Inital RMS Error: ---
+		
+	<td>
+		<img width="128" height="128" src="indirect_texture/final_texture.jpg"><br>
+		Final RMS Error: ---
+	</td>
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="indirect_texture/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+
+<tr>
+	<td>
+		Learning the position of vertices and velocity of object
+	</td>	
+	<td>
+		<img src="mb_geo1/start.png">
+	</td>
+	<td>
+		<img src="mb_geo1/final.png">
+	</td>
+	<td>
+		<img src="mb_geo1/target.png">
+	</td>
+	<td>
+		<img width="128" height="128" src="mb_geo1/delta_start.png"><br>
+		Inital RMS Error: 0.12857632339000702
+		
+	<td>
+		<img width="128" height="128" src="mb_geo1/delta_final.png"><br>
+		Final RMS Error: 0.009840014390647411
+	</td>
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="mb_geo1/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+
+
+<tr>
+	<td>
+		Learning the position of vertices and velocity of object
+	</td>	
+	<td>
+		<img src="mb_geo2/start.png">
+	</td>
+	<td>
+		<img src="mb_geo2/final.png">
+	</td>
+	<td>
+		<img src="mb_geo2/target.png">
+	</td>
+	<td>
+		<img width="64" height="64" src="mb_geo2/final_clean_img.png"><br>
+		Inital RMS Error: ---
+		
+	<td>
+		<img width="64" height="64" src="mb_geo2/start_clean_img.png"><br>
+		Final RMS Error: ---
+	</td>
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="mb_geo2/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+
+<tr>
+	<td>
+		Adjust the aperture size of the camera.
+	</td>	
+	<td>
+		<img src="aperture_large/start.png">
+	</td>
+	<td>
+		<img src="aperture_large/final.png">
+	</td>
+	<td>
+		<img src="aperture_large/target.png">
+	</td>
+	<td>
+		<img width="128" height="128" src="aperture_large/delta_start.png"><br>
+		Inital RMS Error: 0.15653863549232483
+	<td>
+		<img width="128" height="128" src="aperture_large/delta_final.png"><br>
+		Final RMS Error: 0.07662650942802429
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="aperture_large/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+
+</table>
+<hr size="20px" color="gray">
+
+
+<table>
+
 
 <!---
 New stuff

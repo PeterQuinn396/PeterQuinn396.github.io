@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Peter Quinn">
+    <title>Peter Quinn - Projects</title>
+
+	<!-- Bootstrap CSS -->	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+	<!-- Custom Style overwrites -->
+    <link rel="stylesheet" href="../../../../css/style.css">
+
+    <!-- Scripts -->
+    
+    <!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- End scripts -->
+	
+	</head>
+	
+	<body>
+	 	 
+	 <!-- Nav Bar -->
+	 <div class="nav-spacer" id="top"></div>
+	 <nav class="navbar fixed-top navbar-expand-sm navbar-toggler navbar-dark navback" >	
+		<a class="navbar-brand" style="color:white; font-size:25px">Peter Quinn</a>	 
+		
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav mr-auto">				
+		  <li class="nav-item">
+			<a class="nav-link" href="../../../../index.html#home">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../../../../index.html#bio">About</a>
+		  </li>
+		   <li class="nav-item">
+			<a class="nav-link" href="../../../../index.html#projects">Projects</a>
+		  </li>
+		   <li class="nav-item">
+			<a class="nav-link" href="../../../../index.html#travel">Travel</a>
+		  </li>		 
+		</ul>
+		</div>
+	</nav>	
+
+	 
+
+	<!--end nav bar -->
+
+	<!--main body-->
+	<div class="container">
+	
+	<div class = "jumbotron" style="background-image:url(phb.jpg); background-size:cover">
+		<h1 style="color:white">Making an AI create D&D Items</h1>
+		<h3 style="color:white"><br>Fall 2020</h3>
+		
+	</div>
+	</div>
+	
+	<div class="container">
+	<div class="body-text col-sm-12 center">		
+	
+		<h3 style="padding-top:15px">While scrolling Twitter one day...</h3>
+		<p>I saw that someone had used machine learning to train an AI to create D&D <a target="_blank" href="https://aiweirdness.com/post/172170729017/dungeons-and-dragons-creatures-generated-by"> monsters</a> and <a href="https://aiweirdness.com/post/165373096197/a-neural-network-learns-to-create-better-dd">  spells</a>.
+		However, they only created names for the monsters, which seemed a little disappointing to me. It left so many unansewered questions like: <i>"What does a computer think a spell called "Hail to the Dave" actually do?"</i> and <i>"Exactly how afraid of a "Wolfworm" should I be?"</i>.		
+		</p> 
+		
+		<p>
+		I decided to have a go at this myself and see if, in addition to names, we could get some details out of an AI's creative writing endeavours. It would be interesting to see if an AI remembers enough of the history of what it has been writing to relate the description of an item to its name.
+		</p>
+		<p>
+		I chose to work with items since they have interesting names and reasonably concise descriptions, at least compared to monsters and spells. Additionally, I hadn't seen anyone try this with items yet, and there are some pretty neat items in D&D. 
+		
+		So, I scraped a dataset of 581 item names and descriptions for D&D 5e from the corners of internet. This dataset is on the small side. It would be interesting to see how well this would work if there was a bigger dataset available.
+		</p>
+		
+		<p> 
+		Using an awesome python library called <a href= "https://minimaxir.com/2019/09/howto-gpt2/"> gpt-2-simple </a> and the <a href="https://colab.research.google.com/drive/1VLG8e7YSEwypxU-noRNhsv5dW4NfTGce"> provided examples </a> by Max Woolf, I was able to get this project working much faster than expected. 
+		</p>
+		
+		<p>
+		Here is a link to my <a target="_blank" href="https://colab.research.google.com/drive/1calDtVPCPlBgAUonzrRKuPsZsEONgqWN?usp=sharing">Google Colab notebook </a> with the code.
+		</p>
+		
+		<p>
+		Something that was critical to getting interesting results was increasing the temperature (randomness) of the AI. With the default setting, it just produced (for the most part) items it had seen in the training set.
+		</p>	
+		
+		
+		<p> Here are some of the best items it came up with.
+		</p>
+		
+		<div class="container">
+		<div class="row">
+		<div class= "col-sm-6">
+		<div class = "dnd-item col-sm-12">
+			<table>
+				<tr><td class="item-name"> Crystal Ball of Fireballs </td></tr>
+				<tr><td> <hr style="height:2px; background-color:#822000; margin: 6px 0;"> </td></tr>
+				<tr><td class = "item-desc"> <p> While touching this <i> crystal ball </i>, you can use an action to speak the command word and throw the ball up to 60 feet, shattering it on impact. Or, if you throw the ball directly at a creature, the target must make a DC 13 Dexterity saving throw. On a failed save, it takes <b> 2d6 </b> fire damage, or half as much damage if it is a humanoid. </p> Alternatively, if the ball is within 5 feet of you and you aren't holding a <i> crystal ball </i>, you can speak the command word and transform the ball into a harmless, nonmagical diamond-shaped beam, which shines for 1 minute on a willing target. The beam moves with you and remains centered on you. You can use an action to speak the command word again, directing the beam to a specific point on the ground or a surface the specified distance away. The affected area becomes a nonmagical, difficult terrain. </td> </tr>
+			</table>			
+		
+		</div>
+		</div>
+		<br>
+		
+		<div class= "col-sm-6">
+		<div class = "dnd-item col-sm-12">			
+			<table>
+				<tr><td class="item-name"> Amulet of Friends </td></tr>
+				<tr><td> <hr style="height:2px; background-color:#822000; margin: 6px 0;"> </td></tr>
+				<tr><td class = "item-desc">Your closest friends and family get a bonus to the spell attack bonus of your spells. This property of the amulet is also transferred to the amulet wielder. The amulet has 10 charges. While holding it, you can use an action to expend 1 charge to cast {@spell charm person}, {@spell command}, or {@spell control weather} from it. The amulet regains {@dice 1d8 + 4} expended charges daily at dawn. </td> </tr>
+			</table>			
+		</div>
+			</div>
+		
+		</div>
+		</div>
+		<br>
+		<p>
+		I was also able to force the item name to start with a certain word, such as "Ring" or "Cloak".
+		</p>
+		
+		<div class="container">
+		<div class="row">
+		
+		<div class= "col-sm-6">
+		<div class = "dnd-item col-sm-12">	
+			<table>
+				<tr><td class="item-name">Cloak of many faces</td></tr>
+				<tr><td> <hr style="height:2px; background-color:#822000; margin: 6px 0;"> </td></tr>
+				<tr><td class = "item-desc">  <p>This cloak appears to have many faces carved into it, each of which is an intelligent, non-magical person with a different appearance. The faces speak, read, and understand one another. The faces can choose any number of humanoid faces or an unlimited number of humanoid faces. </p>
+				
+				<p> Each face has a unique set of facial features, including the color of its iris, the shape of its mouth, the color of its eyelashes, the way its teeth line up, and the way its clothing looks. No two faces can be the same face, and some faces look identical even after being played around with a bit. </p>
+				
+				<p> If you don't know what to look for, try an intelligent humanoid from another race. You'll probably spot it instantly, but you'll have to make an Intelligence check to determine what it is about. The DC is 11. On a failed check, the creature becomes visible only to you. The faces aren't intelligent, and they can't possibly have any special abilities. They're just like any other creature, and they can't be influenced by magic. </p> </td> </tr>
+			</table>			
+		</div>
+		</div>
+		
+		
+		
+		<div class= "col-sm-6">
+		<div class = "dnd-item col-sm-12">		
+			<table>
+				<tr><td class="item-name"> Ring of Protection </td></tr>
+				<tr><td> <hr style="height:2px; background-color:#822000; margin: 6px 0;"> </td></tr>
+				<tr><td class = "item-desc">  You gain a +1 bonus to AC against creatures that aren't you. </td> </tr>
+			</table>			
+		
+		</div>
+		</div>
+		<br>	
+		
+		
+		</div>
+		</div>
+		<br>
+		
+		<p>That <i> Cloak of Many Faces </i> is a little disturbing.</p>
+		<p>
+		The next couple are some of the more nonsensical ones that came out.  These happened when I increased the randomness of the output too much. Despite not making much logical sense, it's interesting that the sentences still make grammatical sense. The robustness of GPT-2 in that sense is very impressive.
+		</p>
+		
+		<div class="container">
+		<div class="row">
+			
+		<div class= "col-sm-6">
+		<div class = "dnd-item col-sm-12">	
+			<table>
+				<tr><td class="item-name"> Levinan Rope (splittester)</td></tr>
+				<tr><td> <hr style="height:2px; background-color:#822000; margin: 6px 0;"> </td></tr>
+				<tr><td class = "item-desc">   Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check. </td> </tr>
+			</table>			
+		</div>
+		</div>
+		
+		
+			
+		<div class= "col-sm-6">
+		<div class = "dnd-item col-sm-12">	
+			<table>
+				<tr><td class="item-name">Ring of Speed</td></tr>
+				<tr><td> <hr style="height:2px; background-color:#822000; margin: 6px 0;"> </td></tr>
+				<tr><td class = "item-desc">    You can increase the speed of your ring .
+			</td> </tr>
+			</table>			
+		</div>
+		</div>
+		
+		</div>
+		</div>
+		<br>
+	</div>
+	</div>
+	
+	
+	
+		
+	<!-- end main body-->
+	<footer class="footer" style="padding-top:75px">
+      <div class="container">
+        <p class="text-muted"></p>
+      </div>
+    </footer>
+	</body>

@@ -1,3 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+	/*background-color:#44434c;*/
+	/* background: linear-gradient(180deg, #141e30 0%, #243b55 100%); */
+	background: linear-gradient(180deg, #000428 0%, #004e92 100%);
+	
+}
+
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
     color:white;
     background-color:#FF7777;
@@ -75,10 +88,6 @@ padding-top:15px;
 	color:black;
 }
 
-
-body {
-	background-color:#44434c;
-}
 
 .item-border{
 	width:100%;

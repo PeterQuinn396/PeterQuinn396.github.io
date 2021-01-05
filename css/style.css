@@ -11,11 +11,13 @@ body {
 	
 }
 
+
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
     color:white;
     background-color:#FF7777;
     }
 	
+
 .nav-pills > li > a, .nav-pills > li >a:focus {
 	color:white;
 	background-color:#FF0000;

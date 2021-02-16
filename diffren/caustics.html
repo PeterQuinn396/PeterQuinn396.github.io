@@ -1,0 +1,268 @@
+<html>
+<head>
+<style>
+td {text-align:center; valign='center'}
+table {border-collapse: collapse;}
+
+tr {border-bottom: solid black;
+	border-width: 2px}
+tr:first-child {
+  border-top: none;
+}
+tr:last-child {
+  border-bottom: none;
+}
+
+.line {
+    border-bottom: 40px solid black;
+}
+
+</style>
+
+</head>
+<body>
+<table>
+<tr>
+	<td>
+		Description
+	</td>
+	<td>
+		Initialization
+	</td>
+	<td>
+		Optimized Result
+	</td>
+	<td>
+		Target
+	</td>
+	
+	<td>
+		Optimization Process (click to play video)
+	</td>		
+</tr>
+
+
+<!--
+Feb 3
+-->
+
+<tr>
+	<td>
+		Optimize index of refraction (works)
+	</td>	
+	<td>
+		<img src="caustics/ior/start.png">
+	</td>
+	<td>
+		<img src="caustics/ior/final.png">
+	</td>
+	<td>
+		<img src="caustics/ior/target.png">
+	</td>
+	
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="caustics/ior/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+<tr>
+	<td>
+		Optimize normal map. (no regularization)
+	</td>	
+	<td>
+		<img src="caustics/no_reg_nm/start.png">
+	</td>
+	<td>
+		<img src="caustics/no_reg_nm/final.png">
+	</td>
+	<td>
+		<img src="caustics/no_reg_nm/target.png">
+	</td>
+	
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="caustics/no_reg_nm/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+<tr>
+	<td>
+		Optimize normal map. (sample refraction direction around a phong lobe to add regularization to caustic)
+	</td>	
+	<td>
+		<img src="caustics/reg_nm/start.png">
+	</td>
+	<td>
+		<img src="caustics/reg_nm/final.png">
+	</td>
+	<td>
+		<img src="caustics/reg_nm/target.png">
+	</td>
+	
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="caustics/reg_nm/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+
+<tr>
+	<td>
+		Optimize normal map. No regularization. Starting normal map is target normal map. Shows target minima is unstable.
+	</td>	
+	<td>
+		<img src="caustics/no_reg_start_nm/start.png">
+	</td>
+	<td>
+		<img src="caustics/no_reg_start_nm/final.png">
+	</td>
+	<td>
+		<img src="caustics/no_reg_start_nm/target.png">
+	</td>
+	
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="caustics/no_reg_start_nm/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+<tr>
+	<td>
+		Optimize normal map. Phong lobe regularization. Starting normal map is target normal map. Shows target minima is unstable.
+	</td>	 
+	<td>
+		<img src="caustics/reg_start_nm/start.png">
+	</td>
+	<td>
+		<img src="caustics/reg_start_nm/final.png">
+	</td>
+	<td>
+		<img src="caustics/reg_start_nm/target.png">
+	</td>
+	
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="caustics/reg_start_nm/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+
+<tr>
+	<td>
+		Optimize an easier normal map. No regularization.
+	</td>	
+	<td>
+		<img src="caustics/easy_no_reg/start.png">
+	</td>
+	<td>
+		<img src="caustics/easy_no_reg/final.png">
+	</td>
+	<td>
+		<img src="caustics/easy_no_reg/target.png">
+	</td>
+	
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="caustics/easy_no_reg/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+	
+	
+<tr>
+	<td>
+		Optimize position (x,y,z). No regularization.
+	</td>	 
+	<td>
+		<img src="caustics/no_reg_pos/start.png">
+	</td>
+	<td>
+		<img src="caustics/no_reg_pos/final.png">
+	</td>
+	<td>
+		<img src="caustics/no_reg_pos/target.png">
+	</td>
+	
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="caustics/no_reg_pos/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+
+
+<tr>
+	<td>
+		Optimize position (x,y,z). No regularization. Starting position target position. Shows target minima is unstable.
+	</td>	 
+	<td>
+		<img src="caustics/no_reg_start_pos/start.png">
+	</td>
+	<td>
+		<img src="caustics/no_reg_start_pos/final.png">
+	</td>
+	<td>
+		<img src="caustics/no_reg_start_pos/target.png">
+	</td>
+	
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="caustics/reg_start_pos/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+<tr>
+	<td>
+		Optimize position (x,y,z). Phong lobe regularization. Starting position target position. Shows target minima is unstable.
+	</td>	 
+	<td>
+		<img src="caustics/reg_start_pos/start.png">
+	</td>
+	<td>
+		<img src="caustics/reg_start_pos/final.png">
+	</td>
+	<td>
+		<img src="caustics/reg_start_pos/target.png">
+	</td>
+	
+	<td>
+		<video width="128" height="128" autoplay loop controls>
+		  <source src="caustics/reg_start_pos/video.mp4" type="video/mp4">
+		  Error. Video not suppported in your browser.
+		</video>
+	</td>
+	
+</tr>
+
+
+
+</tr>
+
+
+
+</table>
+</body>
+</html>

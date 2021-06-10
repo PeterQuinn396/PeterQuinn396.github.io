@@ -88,16 +88,34 @@
 		<h3 style="padding-top:15px">Project Description</h3>
 		<p>This project was completed as part of the requirements for the course COMP 767: Reinforcement Learning, taught by Professor Doina Precup at McGill University.</p> 
 
-		<p> Our goal was to learn more about the <a href = "https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go">AlphaZero</a> algorithm that had recently been used by Deepmind to acheive the highest level of play at chess and Go, learning entirely by playing itself millions and millions of times. We implemented the algorithm ourselves and had it learn to play a simple game. The game we chose was Tic Tac Toe. This game should have small enough state and action spaces that we should
-		be able to create an agent that can learn to play without requiring an extraordinary
+		<p> Our goal was to learn more about the <a href = "https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go">AlphaZero</a> algorithm that had recently been used by Deepmind to acheive the highest level of play at chess and Go, learning entirely by playing itself millions and millions of times. We implemented the algorithm ourselves and had it learn to play a simple game. The game we chose was Tic Tac Toe. This game should have small enough state and action spaces that we should be able to create an agent that can learn to play without requiring an extraordinary
 		amount of computation resources.
 		</p>
 		
-		<p> We were able to train a model that played with at least some understanding of the game. However, it was not able to play perfectly every time  we were able  We suspect that by simulating many more games, and many more states in each game, and tweaking some of the
-		hyperparameters, the performance would improve significantly. This algorithm is extremely computationally intensive. Particularly, simulating many games while examining many possible different actions at each step for the MCTS
-		step is very resource intensive. Generating a large amount of training games is
-		critical for the algorithm to converge to a robust agent.
+		<p> We were able to train a model that played with at least some understanding of the game. However, it was not able to play perfectly every time. We suspect that by simulating many more games, and many more states in each game, and tweaking some of the hyperparameters, the performance would improve significantly. This algorithm is extremely computationally intensive. Particularly, simulating many games while examining many possible different actions at each step for the Monte Carlo Tree Search (MCTS) step is very resource intensive. Generating a large amount of training games is critical for the algorithm to converge to a robust agent.
 		</p>
+		
+		<h4 style="padding-top:15px">Update - Spring 2021</h3>
+		<p>I wanted to revisit this project since I was disappointed that I could not get the agent to consistently play a perfect game of tic-tac-toe. Going back, I made some subtle tweaks that dramatically improved the performance of the agent. With these changes the agent is now able to play perfectly in every game I play against it by hand; properly exploiting opponent blunders, blocking opponent wins, and forcing draws. </p>
+		
+		<p> 
+		One main problem that I noticed with the previous agent is that it would overspecialize into playing against itself, and it would not know what to do when someone played a different strategy against it (i.e. generating unfamiliar states). To force the agent to see a larger variety of states, I added a 20% chance of a random action being selected at every step of the MCTS, rather than strictly sampling the action from the agent's policy.  
+		</p>
+		
+		<p> Originally, I had given it a 10% chance of choosing a random action when selecting the next action in the game it was currently simulating. This change increases that probability, and also adds noise to the tree growth step of the MCTS. Introducing this additional randomness, along with increasing the number of rollouts for each step of the MCTS from 20 to 30, and adding a replay buffer that holds the last 800 states seen, made a significant difference in the performance.
+		</p>
+		<p> 
+		The states, policies, and game results in replay buffer are used as the training data during the network improvement step. The fully connect residual network is trained for 10 epochs on this data in batches of 64.
+		These changes are based on ideas presented in the AlphaZero paper, where they use Dirichlet noise during the MCTS steps to ensure that the agent sees a variety of states, and use a large replay buffer of recent states to stabalize the network.
+		</p>
+		
+		
+		<br>
+		<div style="text-align:center">
+		<a href="https://github.com/PeterQuinn396/COMP-767-AlphaZero" class="btn btn-default btn-lg" target="_"> <span class="fa fa-file-text fa-lg"></span> Report Paper </a> 
+		
+		<a href="https://github.com/PeterQuinn396/COMP-767-AlphaZero" class="btn btn-default btn-lg" target="_"> <span class="fa fa-github fa-lg"></span> Project Repo</a>
+		</div>
 		
 		<div class="embed-responsive embed-responsive-16by9">
 		<iframe class="embed-responsive-item" style="align:center; padding:15px"
@@ -105,9 +123,6 @@
 		</iframe>
 		</div>
 		
-		<h3 style="padding-top:15px">Additional Information</h3>
-		<p> Link to project repo: <a href="https://github.com/PeterQuinn396/COMP-767-AlphaZero">https://github.com/PeterQuinn396/COMP-767-AlphaZero</a>
-		<p>Full Project Report: <a href="./COMP_767_Project.pdf">  Report </a></p>
 		
 	</div>
 	</div>

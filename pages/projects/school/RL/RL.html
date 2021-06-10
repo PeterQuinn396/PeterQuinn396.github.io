@@ -92,7 +92,7 @@
 		amount of computation resources.
 		</p>
 		
-		<p> We were able to train a model that played with at least some understanding of the game. However, it was not able to play perfectly every time. We suspect that by simulating many more games, and many more states in each game, and tweaking some of the hyperparameters, the performance would improve significantly. This algorithm is extremely computationally intensive. Particularly, simulating many games while examining many possible different actions at each step for the Monte Carlo Tree Search (MCTS) step is very resource intensive. Generating a large amount of training games is critical for the algorithm to converge to a robust agent.
+		<p> We were able to train a model that played with at least some understanding of the game. However, it was not able to play perfectly every time. We suspect that by simulating many more games, and many more states in each game, and tweaking some of the hyper parameters, the performance would improve significantly. This algorithm is extremely computationally intensive. Particularly, simulating many games while examining many possible different actions at each step for the Monte Carlo Tree Search (MCTS) step is very resource intensive. Generating a large amount of training games is critical for the algorithm to converge to a robust agent.
 		</p>
 		
 		<h4 style="padding-top:15px">Update - Spring 2021</h3>
@@ -102,11 +102,11 @@
 		One main problem that I noticed with the previous agent is that it would overspecialize into playing against itself, and it would not know what to do when someone played a different strategy against it (i.e. generating unfamiliar states). To force the agent to see a larger variety of states, I added a 20% chance of a random action being selected at every step of the MCTS, rather than strictly sampling the action from the agent's policy.  
 		</p>
 		
-		<p> Originally, I had given it a 10% chance of choosing a random action when selecting the next action in the game it was currently simulating. This change increases that probability, and also adds noise to the tree growth step of the MCTS. Introducing this additional randomness, along with increasing the number of rollouts for each step of the MCTS from 20 to 30, and adding a replay buffer that holds the last 800 states seen, made a significant difference in the performance.
+		<p> Originally, I had given it a 10% chance of choosing a random action when selecting the next action in the game it was currently simulating. This change increases that probability, and also adds noise to the tree growth step of the MCTS. Introducing this additional randomness, along with increasing the number of roll outs for each step of the MCTS from 20 to 30, and adding a replay buffer that holds the last 800 states seen, made a significant difference in the performance.
 		</p>
 		<p> 
 		The states, policies, and game results in replay buffer are used as the training data during the network improvement step. The fully connect residual network is trained for 10 epochs on this data in batches of 64.
-		These changes are based on ideas presented in the AlphaZero paper, where they use Dirichlet noise during the MCTS steps to ensure that the agent sees a variety of states, and use a large replay buffer of recent states to stabalize the network.
+		These changes are based on ideas presented in the AlphaZero paper, where they use Dirichlet noise during the MCTS steps to ensure that the agent sees a variety of states, and use a large replay buffer of recent states to stabilize the network.
 		</p>
 		
 		

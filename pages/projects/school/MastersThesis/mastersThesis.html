@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Peter Quinn">
+    <title>Peter Quinn - Projects</title>
+
+	<!-- Bootstrap CSS -->	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+	<!-- Custom Style overwrites -->
+    <link rel="stylesheet" href="../../../../css/style.css">
+
+    <!-- Scripts -->
+    
+    <!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5GXSD3VKH7"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-5GXSD3VKH7');
+	</script>
+	<!-- End scripts -->
+	
+	</head>
+	
+	<body>
+	 	 
+		 
+	 <!-- Nav Bar -->
+	 <div class="nav-spacer" id="top"></div>
+	 <nav class="navbar fixed-top navbar-expand-sm navbar-toggler navbar-dark navback" >	
+		<a class="navbar-brand"  href="../../../../index.html#home" style="color:white; font-size:25px">Peter Quinn</a>	 
+		
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav mr-auto">				
+		  <li class="nav-item">
+			<a class="nav-link" href="../../../../index.html#home">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="../../../../index.html#bio">About</a>
+		  </li>
+		   <li class="nav-item">
+			<a class="nav-link" href="../../../../index.html#projects">Projects</a>
+		  </li>
+		   <li class="nav-item">
+			<a class="nav-link" href="../../../../index.html#travel">Travel</a>
+		  </li>		 
+		</ul>
+		</div>
+	</nav>	
+	<!--end nav bar -->
+
+	<!--main body-->
+	<div class="container">
+	
+	<div class = "jumbotron" style="background-image:url(banner.jpg); background-size:cover">
+		<h1 style="color:black">Regularizing Discontinuities in Ray Traced Global Illumination for Differentiable Rendering</h1>
+		
+		
+	</div>
+	</div>
+	
+	<div class="container">
+	<div class="body-text col-sm-12 center">		
+		
+	
+		<h3 style="padding-top:15px">Abstract</h3>
+		<p>In recent years, neural network based machine learning (ML) models have demonstrated revolutionary performance in computer vision tasks, such as object recognition. These methods typically focus on only 2D images and lack an understanding of the 3D world that underlies the image. On the other hand, rendering, in the computer graphics field, is the process of creating a 2D image from a digital description of a 3D scene. </p>
+		<p>
+		Viewing computer vision as an inverse rendering problem has led to a growing interest in differentiable rendering, the key idea being that perhaps by incorporating information about how 3D scenes result in 2D images, ML models that analyse 2D images could be improved. Differentiable renderers, like traditional renderers, generate images from digital descriptions of 3D scenes, but also allow for the computation of gradients for the output image with respect to the various input parameters in the scene. These input parameters can include the positions of objects, material properties, and camera pose. The gradients can be used in end-to-end training of machine learning models, in applications such as single-view 3D object reconstruction, or analysis-by-synthesis approaches for inverse graphics.
+		</p>
+		<p>
+		We introduce a novel differentiable path tracing algorithm where discontinuities in the rendering process are regularized through a blurring of the geometry. Our differentiable renderer implements full global illumination and has parameters for controlling the regularization, which allows for control over the smoothness of the loss landscape. Additionally, we also explore how differentiable renderers can be adapted to camera effects such as motion blur and depth of field. We successfully apply our system to solve several examples of challenging inverse rendering optimization problems that involve complex light transport scenarios.</p> 
+				
+		<div style="text-align:center" >
+		<a href="PQuinn_Masters_Thesis_FINAL.pdf" class="btn btn-default btn-lg" target="_"> <span class="fa fa-file-text fa-lg"></span> Full Paper </a>
+		<a href="thesis_pics.html" class="btn btn-default btn-lg"> <span class="fa fa-list fa-lg"></span> Examples </a>
+		</div>
+	
+			
+	</div>
+	</div>
+	
+		
+	<!-- end main body-->
+	<footer class="footer" style="padding-top:75px">
+      <div class="container">
+        <p class="text-muted"></p>
+      </div>
+    </footer>
+	</body>

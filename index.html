@@ -1,670 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Peter Quinn">
-    <title>Peter Quinn - Home</title>
 
-    <!-- Bootstrap CSS -->	
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<head>
+
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Peter Quinn">
+	<title>Peter Quinn - Home</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Custom Style overwrites -->
-    <link rel="stylesheet" href="css/style.css">
-	
-	 <style>
-	#map{
-	height: 500px;
-	width:100%;
-	}
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		#map {
+			height: 500px;
+			width: 100%;
+		}
 	</style>
-    <!-- Scripts -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5GXSD3VKH7"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	  gtag('config', 'G-5GXSD3VKH7');
+		gtag('config', 'G-5GXSD3VKH7');
 	</script>
 
-    <!-- End scripts -->
-	
-	</head>
-	
-	<body>
-	 <div class="nav-spacer" id="top"></div>
-	 
-	 <!-- Nav Bar -->
-	
-	 <nav class="navbar fixed-top navbar-expand-sm navbar-toggler navbar-dark navback" >	
-		<a class="navbar-brand" style="color:white; font-size:25px">Peter Quinn</a>	 
-		
+	<!-- End scripts -->
+
+</head>
+
+<body>
+	<div class="nav-spacer" id="top"></div>
+
+	<!-- Nav Bar -->
+
+	<nav class="navbar fixed-top navbar-expand-sm navbar-toggler navbar-dark navback">
+		<a class="navbar-brand" style="color:white; font-size:25px">Peter Quinn</a>
+
 		<!-- Toggler/collapsibe Button -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		
+
 		<!-- Navbar links -->
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-		<ul class="navbar-nav mr-auto">				
-		  <li class="nav-item">
-			<a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#top">About</a>
-		  </li>
-		   <li class="nav-item">
-			<a class="nav-link" href="#projects">Projects</a>
-		  </li>
-		   <li class="nav-item">
-			<a class="nav-link" href="#travel">Travel</a>
-		  </li>		 
-		</ul>
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#top">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#travel">Travel</a>
+				</li>
+			</ul>
 		</div>
 	</nav>
-	
+
 
 	<!--end nav bar -->
 
 	<!--main body-->
-			
+
 	<!--bio-->
 	<div id="bio"></div>
-	
+
 	<div class="container-fluid">
-	<div class = "jumbotron" style="background-image:url(images/mcgill.jpg);background-size:fit">	
-	<div class="container">
-	
-	<div class="row body-text justify-content-sm-center align-items-center">
-	
-	<div class = "col-sm-4">
-	<br>
-		<img class = "img-fluid mx-auto d-block rounded-circle" src = "images/face.jpg">
-	</div>
-	
-	<div class="col-sm-8 body-text center">
-		<h1 style="padding-top:15px" class="text-center">About me</h1>
-		<p style="padding-top:10px">
-		I currently work full time for Algolux, an autonomous vehicle company. I work on the engineering team for the fleet of test vehicles, integrating various sensors (cameras, LiDARs, GPS) and computer equipment. 
-		</p>
-		<p>
-		My day to day typically involves writing code (Python, C++) to calibrate and integrate different sensors, or designing circuitry to power, synchronize, and test equipment. I also occasionally travel to spend some time on site with company partners, setting up and testing our solutions to their problems. 
-		</p>
-		<p>
-		During my free time, I like working on side projects involving Arduinos/Raspberri Pis, AI, and 3D printing. When I 
-		am not doing that, I am usually playing D&D or guitar.
-		</p>
-		
-	
-		
-		<p>
-		Email: peter-dot-quinn-at-mail-dot-mcgill-dot-ca
-		</p>
-		</p>		
+		<div class="jumbotron" style="background-image:url(images/mcgill.jpg);background-size:fit">
+			<div class="container">
+
+				<div class="row body-text justify-content-sm-center align-items-center">
+
+					<div class="col-sm-4">
+						<br>
+						<img class="img-fluid mx-auto d-block rounded-circle" src="images/face.jpg">
+					</div>
+
+					<div class="col-sm-8 body-text center">
+						<h1 style="padding-top:15px" class="text-center">About me</h1>
+						<p style="padding-top:10px">
+							I currently work full time for Torc Robotics, an autonomous trucking company. I work on the
+							calibration team for the fleet of test vehicles, particapting in the intrinsic and extrinsic
+							calibration of various sensors (cameras, LiDARs, Radars, GPS/IMU).
+						</p>
+						<p>
+							My day to day typically involves writing code (Python, C++) to calibrate and integrate
+							different sensors, monitor their performance, and analyze any issues.
+						</p>
+						<p>
+							During my free time, I like working on side projects involving Arduinos/Raspberri Pis, AI,
+							and 3D printing. When I
+							am not doing that, I am usually playing D&D or guitar.
+						</p>
+						<p>
+							Email: peter-dot-quinn396-at-gmail-dot-com
+						</p>
+						</p>
 
 
-		<div style="text-align:center">
-			<p>
-				<a class="btn btn-social-icon btn-linkedin" target="_blank" href="https://www.linkedin.com/in/peter-quinn-50b016134">
-					<span class="fa fa-linkedin fa-3x"></span>
-				</a>
-			<a class="btn btn-social-icon btn-github" target="_blank" href="https://github.com/PeterQuinn396">
-					<span class="fa fa-github fa-3x"></span>
-				</a>
-			<a class="btn btn-default btn-lg" target="_blank" href="PeterQuinn_CV_web.pdf" style="vertical-align:middle">
-			<span class="fa fa-file fa-lg"></span> CV
-			</a>
-			
-			</p>
+						<div style="text-align:center">
+							<p>
+								<a class="btn btn-social-icon btn-linkedin" target="_blank"
+									href="https://www.linkedin.com/in/peter-quinn-50b016134">
+									<span class="fa fa-linkedin fa-3x"></span>
+								</a>
+								<a class="btn btn-social-icon btn-github" target="_blank"
+									href="https://github.com/PeterQuinn396">
+									<span class="fa fa-github fa-3x"></span>
+								</a>
+								<a class="btn btn-default btn-lg" target="_blank" href="PeterQuinn_CV_web.pdf"
+									style="vertical-align:middle">
+									<span class="fa fa-file fa-lg"></span> CV
+								</a>
+
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
 		</div>
-		
-		</div>	
-	</div>
-	</div>	
-	</div>
 	</div>
 	<!--end bio-->
-	
+
 	<!-- ed -->
-	
+
 	<div class="container">
-	<div class="body-text col-sm-12">
-	<br>	
-	<h1 class="text-center">Education</h1>	
-	
-	<div class= "row mt-4 justify-content-sm-center align-items-center">
-	<div class= "col-sm-3 text-center">
-		<img class = "img-fluid" src = "images/mcgill logo.png">
-	</div>
-	
-	<div class = "col-sm-6">
-	
-	<b>Master of Science</b> <br>
-	McGill University, Montréal, QC <br>
-	Faculty of Engineering <br>
-	Department of Electrical, Computer and Software Engineering <br>	
-	Supervisor:<a href="http://www.cim.mcgill.ca/~derek/"> Derek Nowrouzezahrai </a> <br>
-	Thesis: <a href="file:///C:/Users/peter/Documents/GitHub/PeterQuinn396.github.io/pages/projects/school/MastersThesis/mastersThesis.html">Regularizing Discontinuities in Ray Traced Global Illumination for Differentiable Rendering</a> <br>
-	<i>2019 - 2021</i> <br>
-	
-	</div>
-	</div>
-	
-	<div class= "row mt-4 justify-content-sm-center align-items-center">
-	<div class= "col-sm-3 text-center">
-		<img  class = "img-fluid" src = "images/mcgill logo.png">
-	</div>
-	
-	<div class = "col-sm-6">
-	<b>Bachelors of Engineering, Honours Electrical Engineering </b> <br>
-	McGill University, Montréal, QC <br>
-	Faculty of Engineering <br>
-	Department of Electrical, Computer and Software Engineering <br>
-	<i>2015 - 2019</i>
-	</div>
-	</div>
-	
-	</div>
+		<div class="body-text col-sm-12">
+			<br>
+			<h1 class="text-center">Education</h1>
+
+			<div class="row mt-4 justify-content-sm-center align-items-center">
+				<div class="col-sm-3 text-center">
+					<img class="img-fluid" src="images/mcgill logo.png">
+				</div>
+
+				<div class="col-sm-6">
+
+					<b>Master of Science</b> <br>
+					McGill University, Montréal, QC <br>
+					Faculty of Engineering <br>
+					Department of Electrical, Computer and Software Engineering <br>
+					Supervisor:<a href="http://www.cim.mcgill.ca/~derek/"> Derek Nowrouzezahrai </a> <br>
+					Thesis: <a
+						href="file:///C:/Users/peter/Documents/GitHub/PeterQuinn396.github.io/pages/projects/school/MastersThesis/mastersThesis.html">Regularizing
+						Discontinuities in Ray Traced Global Illumination for Differentiable Rendering</a> <br>
+					<i>2019 - 2021</i> <br>
+				</div>
+			</div>
+
+			<div class="row mt-4 justify-content-sm-center align-items-center">
+				<div class="col-sm-3 text-center">
+					<img class="img-fluid" src="images/mcgill logo.png">
+				</div>
+
+				<div class="col-sm-6">
+					<b>Bachelors of Engineering, Honours Electrical Engineering </b> <br>
+					McGill University, Montréal, QC <br>
+					Faculty of Engineering <br>
+					Department of Electrical, Computer and Software Engineering <br>
+					<i>2015 - 2019</i>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
 	<br>
-	<!-- exp --> 
+	<!-- exp -->
 	<div class="container">
-	<div class="body-text col-sm-12">
-	
-	<br>
-	<h1 class="text-center">Experience</h1>
-	
-	<div class= "row mt-4 justify-content-sm-center align-items-center">
-	<div class= "col-sm-3 text-center">
-		<img class = "img-fluid" src = "images/logo_algolux.png">
-	</div>	
-	<div class = "col-sm-6">	
-	<b>Hardware Engineering</b> <br/>
-	Algolux, Montréal, QC <br>
-	Integrate systems of computers, cameras, LiDARs, GPS, etc. on company test vehicles.<br>
-	Develop code for calibration, monitoring, and analysis of sensor suite. <br>
-	Design circuitry (PCB, Arduino) for powering and synchronizing equipment.<br>
-	<i>September 2021 - </i> <br>	
+		<div class="body-text col-sm-12">
+
+			<br>
+			<h1 class="text-center">Experience</h1>
+
+			<div class="row mt-4 justify-content-sm-center align-items-center">
+				<div class="col-sm-3 text-center">
+					<img class="img-fluid" src="images/torc_logo.webp">
+				</div>
+				<div class="col-sm-6">
+					<b>Software Engineer</b> <br />
+					Torc Robotics Canada, Montréal, QC <br>
+					Development of code for calibration, monitoring, and analysis of sensor suite including cameras,
+					LiDARs, Radars, GPS/IMU, etc. on company test vehicles.<br>
+					<i>March 2023 - </i>
+				</div>
+			</div>
+
+			<div class="row mt-4 justify-content-sm-center align-items-center">
+				<div class="col-sm-3 text-center">
+					<img class="img-fluid" src="images/logo_algolux.png">
+				</div>
+				<div class="col-sm-6">
+					<b>Hardware Engineering</b> <br />
+					Algolux, Montréal, QC <i>(aquired by Torc Robotics in March 2023)</i><br>
+					Integrated systems of computers, cameras, LiDARs, GPS, etc. on company test vehicles.<br>
+					Developed code for calibration, monitoring, and analysis of sensor suite. <br>
+					Designed circuitry (PCB, Arduino) for powering and synchronizing equipment.<br>
+					Travelled to company partners for demoing of equipment.<br>
+					<i>September 2021 - March 2023</i> <br>
+				</div>
+			</div>
+
+
+			<div class="row mt-4 justify-content-sm-center align-items-center">
+				<div class="col-sm-3 text-center">
+					<img class="img-fluid" src="images/mcgill logo.png">
+				</div>
+				<div class="col-sm-6">
+					<b>Teaching Assistant</b> <br />
+					McGill University, Montréal, QC <br>
+					Prepared assignments and taught tutorials for Realistic/Advanced Image Synthesis (ECSE 446/546).<br>
+					<i>September - December 2019</i> <br>
+				</div>
+			</div>
+
+			<div class="row mt-4 justify-content-sm-center align-items-center">
+				<div class="col-sm-3 text-center">
+					<img class="img-fluid" src="images/matrox.png">
+				</div>
+				<div class="col-sm-6">
+					<b>Hardware Design Intern</b> <br />
+					Matrox Electronic Systems Ltd., Dorval, QC <br>
+					Characterized and debugged hardware designs for camera products.<br>
+					<i>May - August 2018</i>
+				</div>
+			</div>
+
+			<div class="row mt-4 justify-content-sm-center align-items-center">
+				<div class="col-sm-3 text-center">
+					<img class="img-fluid" src="images/tuk.png">
+				</div>
+				<div class="col-sm-6">
+					<b>Research Intern</b> <br />
+					Technical University of Kaiserslautern, Kaiserslautern, Germany<br>
+					Simulated and constructed novel microwave antenna designs.<br>
+					Supervisor: <a href="https://www.eit.uni-kl.de/en/mmt/mitarbeiter/">Marco Rahm</a> <br>
+					<i>May - August 2017</i> <br>
+					<a href="pages/projects/research/DAADRISE2017/daadRise.html">Project Page</a>
+				</div>
+			</div>
+
+			<div class="row mt-4 justify-content-sm-center align-items-center">
+				<div class="col-sm-3 text-center">
+					<img class="img-fluid" src="images/mcgill logo.png">
+				</div>
+				<div class="col-sm-6">
+					<b>Research Intern</b> <br />
+					McGill University, Montréal, QC <br>
+					Worked on hardware and software for a novel PCR system.<br>
+					Supervisor: <a href="https://www.mcgill.ca/engineering/andrew-g-kirk">Andrew Kirk</a> and <a
+						href="https://sites.google.com/site/whatsthehypothesis/home">Phil Roche</a> <br>
+					<i>May - August 2016</i> <br>
+					<a href="pages/projects/research/SURE2016/pcrSystem.html">Project Page</a>
+				</div>
+			</div>
+
+			<div class="row mt-4 justify-content-sm-center align-items-center">
+				<div class="col-sm-3 text-center">
+					<img class="img-fluid" src="images/mcgill robotics.png">
+				</div>
+				<div class="col-sm-6">
+					<b>Member of Power Team</b> <br />
+					McGill Robotics, Autonomous Underwater Vehicle (AUV), Montréal, QC <br>
+					Designed and layed out various custom PCBs for motor and grabber arm power and control.<br>
+					<i>September 2015 – May 2018</i> <br>
+				</div>
+			</div>
+
+			<div class="row mt-4 justify-content-sm-center align-items-center">
+				<div class="col-sm-3 text-center">
+					<img class="img-fluid" src="images/dash.png">
+				</div>
+				<div class="col-sm-6">
+					<b>School Scheduling Intern</b> <br />
+					Dash Computer Solutions, Montréal, QC <br>
+					Used automation and company software to create and manage class schedules for Montréal schools. <br>
+					<i>May - August 2015</i> <br>
+				</div>
+			</div>
+
+		</div>
 	</div>
-	</div>
-	
-	
-	<div class= "row mt-4 justify-content-sm-center align-items-center">
-	<div class= "col-sm-3 text-center">
-		<img class = "img-fluid" src = "images/mcgill logo.png">
-	</div>	
-	<div class = "col-sm-6">	
-	<b>Teaching Assistant</b> <br/>
-	McGill University, Montréal, QC <br>
-	Prepared assignments and taught tutorials for Realistic/Advanced Image Synthesis (ECSE 446/546).<br>
-	<i>September - December 2019</i> <br>	
-	</div>
-	</div>
-	
-	<div class= "row mt-4 justify-content-sm-center align-items-center">
-	<div class= "col-sm-3 text-center">
-		<img class = "img-fluid" src = "images/matrox.png">
-	</div>	
-	<div class = "col-sm-6">	
-	<b>Hardware Design Intern</b> <br/>
-	Matrox Electronic Systems Ltd., Dorval, QC <br>
-	Characterized and debugged hardware designs for camera products.<br>	
-	<i>May - August 2018</i>
-	</div>
-	</div>
-	
-	<div class= "row mt-4 justify-content-sm-center align-items-center">
-	<div class= "col-sm-3 text-center">
-		<img class = "img-fluid" src = "images/tuk.png">
-	</div>	
-	<div class = "col-sm-6">	
-	<b>Research Intern</b> <br/>
-	Technical University of Kaiserslautern, Kaiserslautern, Germany<br>
-	Simulated and constructed novel microwave antenna designs.<br>
-	Supervisor: <a href="https://www.eit.uni-kl.de/en/mmt/mitarbeiter/">Marco Rahm</a> <br>
-	<i>May - August 2017</i> <br>	
-	<a href="pages/projects/research/DAADRISE2017/daadRise.html">Project Page</a>
-	</div>
-	</div>
-	
-	<div class= "row mt-4 justify-content-sm-center align-items-center">
-	<div class= "col-sm-3 text-center">
-		<img class = "img-fluid" src = "images/mcgill logo.png">
-	</div>	
-	<div class = "col-sm-6">	
-	<b>Research Intern</b> <br/>
-	McGill University, Montréal, QC <br>
-	Worked on hardware and software for a novel PCR system.<br>
-	Supervisor: <a href="https://www.mcgill.ca/engineering/andrew-g-kirk">Andrew Kirk</a> and <a href="https://sites.google.com/site/whatsthehypothesis/home">Phil Roche</a> <br>
-	<i>May - August 2016</i> <br>
-	<a href="pages/projects/research/SURE2016/pcrSystem.html">Project Page</a>
-	</div>
-	</div>
-	
-	<div class= "row mt-4 justify-content-sm-center align-items-center">
-	<div class= "col-sm-3 text-center">
-		<img class = "img-fluid" src = "images/mcgill robotics.png">
-	</div>	
-	<div class = "col-sm-6">	
-	<b>Member of Power Team</b> <br/>
-	McGill Robotics, Autonomous Underwater Vehicle (AUV), Montréal, QC <br>
-	Designed and layouted various custom PCBs for motor and grabber arm power and control.<br>
-	<i>September 2015 – May 2018</i> <br>
-	</div>
-	</div>	
-	
-	<div class= "row mt-4 justify-content-sm-center align-items-center">
-	<div class= "col-sm-3 text-center">
-		<img class = "img-fluid" src = "images/dash.png">
-	</div>	
-	<div class = "col-sm-6">	
-	<b>School Scheduling Intern</b> <br/>
-	Dash Computer Solutions, Montréal, QC <br>
-	Used automation and company software to create and manage class schedules for Montréal schools. <br>
-	<i>May - August 2015</i> <br>
-	</div>
-	</div>
-	
-	</div>
-	</div>
-	
+
 	<!-- projects-->
-	
-	
+
+
 	<a class="nav-snap" id="projects">></a>
 	<div class="container">
-	<div class="body-text col-sm-12">
-	<br>	
-	<h1 class="text-center">Projects</h1>
-	<br>
-	
-	<div class= "row">
-	
-	<div class="col-sm-4 d-flex pb-3">
-	<div class="card">		
-			
-		<a href="pages/projects/personal/kv260/kv260.html">
-				<img  class="card-img-top" src="images/kv260.avif" alt="kv260">
-			  </a>
-			
-			<div class = "card-body project-entry">
-			<span class="fa fa-calendar"></span> Winter 2022
-			<h4>
-				<a href="pages/projects/personal/kv260/kv260.html">Gesture Recognition for Smart Home Control with KV260</a>
-			</h4>
-			An FPGA computer vision project. Won 3rd prize in AMD-Xilinx Adative Computing Challenge.
-		</div>			
-	</div>		
-	</div>
-	
-	<div class="col-sm-4 d-flex pb-3">
-	<div class="card">		
-			
-		<a href="pages/projects/school/MastersThesis/mastersThesis.html">
-				<img  class="card-img-top" src="images/cubes.png" alt="">
-			  </a>
-			
-			<div class = "card-body project-entry">
-			<span class="fa fa-calendar"></span> Summer 2021
-			<h4>
-				<a href="pages/projects/school/MastersThesis/mastersThesis.html">Master's Thesis</a>
-			</h4>
-			My master's thesis on differentiable rendering.
-		</div>			
-	</div>		
-	</div>
-	
-	<div class="col-sm-4 d-flex pb-3">
-	<div class="card">		
-			
-		<a href="https://github.com/PeterQuinn396/Realtime-Meshes">
-				<img  class="card-img-top" src="images/bunny.PNG" alt="">
-			  </a>
-			
-			<div class = "card-body project-entry">
-			<span class="fa fa-calendar"></span> Summer 2021
-			<h4>
-				<a href="https://github.com/PeterQuinn396/Realtime-Meshes">Realtime Mesh Viewer/Shader Tester</a>
-			</h4>
-			A project that uses C#/Windows Forms and OpenGL/OpenTK for working with meshes and shaders
-		</div>			
-	</div>		
-	</div>
-	
-	
-	<div class="col-sm-4 d-flex pb-3">
-	<div class="card">		
-			
-		<a href="pages/projects/personal/shaders/shaders.html">
-				<img  class="card-img-top" src="images/shader-thumbnail.PNG" alt="">
-			  </a>
-			
-			<div class = "card-body project-entry">
-			<span class="fa fa-calendar"></span> Winter 2021
-			<h4>
-				<a href="pages/projects/personal/shaders/shaders.html">Shader Fun</a>
-			</h4>
-			Some fun little shaders made on shadertoy
-		</div>			
-	</div>		
-	</div>	
-	
-	 <div class="col-sm-4 d-flex pb-3">
-		<div class="card">		
-				
-			<a href="pages/projects/research/DiffCVGP/diffcvgp.html">
-                    <img  class="card-img-top" src="pages/projects/research/DiffCVGP/thumbnail.jpg" alt="">
-                  </a>
-				
-				<div class = "card-body project-entry">
-				<span class="fa fa-calendar"></span> December 2020
-				<h4>
-					<a href="pages/projects/research/DiffCVGP/diffcvgp.html">Differentiable Path Tracing by Regularizing Discontinuities</a>
-				</h4>
-				A paper accepted at the NeurIPS 2020 workshop on Differentiable Computer Vision, Graphics and Physics
-			</div>			
-		</div>		
-		</div>	
-		
-	 <div class="col-sm-4 d-flex pb-3">
-		<div class="card">			 
-				
-			<a href="pages/projects/personal/ai_items/ai_items.html">
-				<img class="card-img-top" src="images/wand.jpg" alt="">
-			  </a>					
+		<div class="body-text col-sm-12">
+			<br>
+			<h1 class="text-center">Projects</h1>
+			<br>
 
-			<div class="card-body project-entry">
-			<span class="fa fa-calendar"></span> October 2020
-			<h4 class="card-title">
-			<a href="pages/projects/personal/ai_items/ai_items.html">D&D Items with GPT-2</a>
-			</h4>
-			<p class="card-text">
-			Making an AI create magic items for Dungeons and Dragons 5th Edition.
-			</p>
-		</div>
+			<div class="row">
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+						<a href="pages/projects/personal/led_dress/led_dress.html">
+							<img class="card-img-top" src="images/led_dress_board_crop.jpg" alt="led controller">
+						</a>
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> Winter 2023
+							<h4>
+								<a href="pages/projects/personal/led_dress/led_dress.html">LED Wedding Dress</a>
+							</h4>
+							An custom ESP32 based LED controller, for a light up wedding dress.
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+						<a href="pages/projects/personal/kv260/kv260.html">
+							<img class="card-img-top" src="./pages/projects/personal/kv260/system.webp" alt="kv260">
+						</a>
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> Winter 2022
+							<h4>
+								<a href="pages/projects/personal/kv260/kv260.html">Gesture Recognition for Smart Home
+									Control with KV260</a>
+							</h4>
+							An FPGA computer vision project. Won 3rd prize in AMD-Xilinx Adative Computing Challenge.
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+						<a href="pages/projects/school/MastersThesis/mastersThesis.html">
+							<img class="card-img-top" src="images/cubes.png" alt="">
+						</a>
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> Summer 2021
+							<h4>
+								<a href="pages/projects/school/MastersThesis/mastersThesis.html">Master's Thesis</a>
+							</h4>
+							My master's thesis on differentiable rendering.
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+						<a href="https://github.com/PeterQuinn396/Realtime-Meshes">
+							<img class="card-img-top" src="images/bunny.PNG" alt="">
+						</a>
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> Summer 2021
+							<h4>
+								<a href="https://github.com/PeterQuinn396/Realtime-Meshes">Realtime Mesh Viewer/Shader
+									Tester</a>
+							</h4>
+							A project that uses C#/Windows Forms and OpenGL/OpenTK for working with meshes and shaders
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+						<a href="pages/projects/personal/shaders/shaders.html">
+							<img class="card-img-top" src="images/shader-thumbnail.PNG" alt="">
+						</a>
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> Winter 2021
+							<h4>
+								<a href="pages/projects/personal/shaders/shaders.html">Shader Fun</a>
+							</h4>
+							Some fun little shaders made on shadertoy
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+						<a href="pages/projects/research/DiffCVGP/diffcvgp.html">
+							<img class="card-img-top" src="pages/projects/research/DiffCVGP/thumbnail.jpg" alt="">
+						</a>
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> December 2020
+							<h4>
+								<a href="pages/projects/research/DiffCVGP/diffcvgp.html">Differentiable Path Tracing by
+									Regularizing Discontinuities</a>
+							</h4>
+							A paper accepted at the NeurIPS 2020 workshop on Differentiable Computer Vision, Graphics
+							and Physics
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+						<a href="pages/projects/personal/ai_items/ai_items.html">
+							<img class="card-img-top" src="images/wand.jpg" alt="">
+						</a>
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> October 2020
+							<h4 class="card-title">
+								<a href="pages/projects/personal/ai_items/ai_items.html">D&D Items with GPT-2</a>
+							</h4>
+							<p class="card-text">
+								Making an AI create magic items for Dungeons and Dragons 5th Edition.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+						<a href="pages/projects/school/RL/RL.html">
+							<img class="card-img-top" src="images/tictactoe.png" alt="">
+						</a>
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> March - April 2020
+							<h4 class="card-title">
+								<a href="pages/projects/school/RL/RL.html">AlphaZero Tic Tac Toe </a>
+							</h4>
+							<p class="card-text">
+								Learning about the AlphaZero algorithm by implementing it and teaching it Tic Tac Toe.
+							</p>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+
+						<a href="pages/projects/school/HonoursThesis/honoursThesis.html">
+							<img class="card-img-top" src="images/ht_poster.png" alt="">
+						</a>
+
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> September 2018 - April 2019
+							<h4>
+								<a href="pages/projects/school/HonoursThesis/honoursThesis.html">Deep Learning for
+									Lighting Simulations</a>
+							</h4>
+							As my capstone project for my undergrad, I looked at how ray tracing could be improved using
+							recent advancements in machine learning.
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+
+
+						<a href="pages/projects/school/DSD/dsd.html">
+							<img class="card-img-top" src="pages\projects\school\DSD\cyclone2.jpg" alt="">
+						</a>
+
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> September - December 2017
+							<h4>
+								<a href="pages/projects/school/DSD/dsd.html">Blackjack on a FPGA</a>
+							</h4>
+							Programming a Cyclone FPGA board with a single player blackjack game.
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+
+						<a href="pages/projects/research/DAADRISE2017/daadRise.html">
+							<img class="card-img-top" src="pages\projects\research\DAADRISE2017\sim.png" alt="">
+						</a>
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> May - August 2017
+							<h4>
+								<a href="pages/projects/research/DAADRISE2017/daadRise.html">Development of Novel
+									Antennas for Mobile Communication (DAAD RISE) </a>
+							</h4>
+							A summer project at a university in Germany working on antenna design and fabrication.
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+						<a href="pages/projects/research/SURE2016/pcrSystem.html">
+							<img class="card-img-top" src="pages\projects\research\SURE2016\finalSystem.jpg" alt="">
+						</a>
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> May - August 2016
+							<h4>
+								<a href="pages/projects/research/SURE2016/pcrSystem.html"> Rapid PCR using Gold Nanorods
+									and Lasers (SURE) </a>
+							</h4>
+							A summer undergradute research project on building a novel PCR system using gold nanorods
+							and lasers to acheive rapid thermocycling.
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+						<a href="pages/projects/school/DPM/dpm.html">
+							<img class="card-img-top" src="pages\projects\school\DPM\robotSideView.png" alt="">
+						</a>
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> January - April 2016
+							<h4>
+								<a href="pages/projects/school/DPM/dpm.html"> LEGO Mindstorms Autonomous Robot </a>
+							</h4>
+							Building a fully autonomous robot to localize, navigate, avoid obstacles, pickup and launch
+							balls with LEGO mindstorms and Java.
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 d-flex pb-3">
+					<div class="card">
+
+						<a href="pages/projects/school/Belize/belize.html">
+							<img class="card-img-top" src="pages\projects\school\Belize\BelizeGroupPic.jpg" alt="">
+						</a>
+
+						<div class="card-body project-entry">
+							<span class="fa fa-calendar"></span> January 2015
+							<h4>
+								<a href="pages/projects/school/Belize/belize.html"> Marine Biology in Belize</a>
+							</h4>
+							Two weeks on an island off the coast of Belize, studying fish, coral reefs and hunting
+							invasive species.
+						</div>
+
+
+					</div>
+				</div>
+
+			</div>
 		</div>
 	</div>
-	
-	 <div class="col-sm-4 d-flex pb-3">
-		<div class="card">			 
-				
-				<a href="pages/projects/school/RL/RL.html">
-                    <img class="card-img-top" src="images/tictactoe.png" alt="">
-                  </a>					
-
-				<div class="card-body project-entry">
-				<span class="fa fa-calendar"></span> March - April 2020
-				<h4 class="card-title">
-				<a href="pages/projects/school/RL/RL.html">AlphaZero Tic Tac Toe </a>
-				</h4>
-				<p class="card-text">
-				Learning about the AlphaZero algorithm by implementing it and teaching it Tic Tac Toe. 
-				</p>
-				
-			</div>
-		</div>
-		</div>
-		
-		
-		 <div class="col-sm-4 d-flex pb-3">
-		<div class="card">	
-			
-				
-				<a href="pages/projects/school/HonoursThesis/honoursThesis.html">
-                    <img class="card-img-top"  src="images/ht_poster.png" alt="">
-                  </a>
-				
-				
-				<div class = "card-body project-entry">
-				<span class="fa fa-calendar"></span> September 2018 - April 2019
-				<h4>
-					<a href="pages/projects/school/HonoursThesis/honoursThesis.html">Deep Learning for Lighting Simulations</a>
-				</h4>
-				As my capstone project for my undergrad, I looked at how ray tracing could be improved using recent advancements in machine learning.
-			</div>	
-		</div>
-		</div>					
-
-		<div class="col-sm-4 d-flex pb-3">					
-		<div class="card">
-			
-			
-				
-			<a href="pages/projects/school/DSD/dsd.html">
-			<img class="card-img-top" src="pages\projects\school\DSD\cyclone2.jpg" alt="">
-			</a>
-				
-			
-			<div class = "card-body project-entry">
-			<span class="fa fa-calendar"></span> September - December 2017
-			<h4>
-				<a href="pages/projects/school/DSD/dsd.html">Blackjack on a FPGA</a>
-			</h4>
-			Programming a Cyclone FPGA board with a single player blackjack game.
-			</div>
-			
-		</div>	
-		</div>		
-		
-		<div class="col-sm-4 d-flex pb-3">
-			<div class="card">		
-		
-			
-				<a href="pages/projects/research/DAADRISE2017/daadRise.html">
-				<img class="card-img-top" src="pages\projects\research\DAADRISE2017\sim.png" alt="">
-				</a>
-			
-				<div class = "card-body project-entry">
-				<span class="fa fa-calendar"></span> May - August 2017
-				<h4>
-					<a href="pages/projects/research/DAADRISE2017/daadRise.html">Development of Novel Antennas for Mobile Communication (DAAD RISE) </a>
-				</h4>
-				A summer project at a university in Germany working on antenna design and fabrication. 
-			</div>			
-			</div>
-			</div>		
-			
-			 <div class="col-sm-4 d-flex pb-3">
-			<div class="card">
-			
-				<a href="pages/projects/research/SURE2016/pcrSystem.html">
-				<img class="card-img-top" src="pages\projects\research\SURE2016\finalSystem.jpg"alt="">
-				</a>
-				
-				<div class = "card-body project-entry">
-				<span class="fa fa-calendar"></span> May - August 2016
-				<h4>
-					<a href="pages/projects/research/SURE2016/pcrSystem.html"> Rapid PCR using Gold Nanorods and Lasers (SURE) </a>
-				</h4>
-				A summer undergradute research project on building a novel PCR system using gold nanorods and lasers to acheive rapid thermocycling.
-			</div>
-									
-			</div>
-		</div>		
-
-		 <div class="col-sm-4 d-flex pb-3">
-			<div class="card">
-		
-			<a href="pages/projects/school/DPM/dpm.html">
-			<img class="card-img-top"  src="pages\projects\school\DPM\robotSideView.png"alt="">
-			</a>
-				
-			<div class = "card-body project-entry">
-			<span class="fa fa-calendar"></span> January - April 2016
-			<h4>
-				<a href="pages/projects/school/DPM/dpm.html"> LEGO Mindstorms Autonomous Robot </a>
-			</h4>
-			Building a fully autonomous robot to localize, navigate, avoid obstacles, pickup and launch balls with LEGO mindstorms and Java.
-		</div>
-		</div>
-		</div>		
-
-		<div class="col-sm-4 d-flex pb-3">				
-			<div class="card">
-						
-				<a href="pages/projects/school/Belize/belize.html">
-				<img class="card-img-top" src="pages\projects\school\Belize\BelizeGroupPic.jpg" alt="">
-				</a>
-				
-				<div class = "card-body project-entry">
-				<span class="fa fa-calendar"></span> January 2015
-				<h4>
-					<a href="pages/projects/school/Belize/belize.html"> Marine Biology in Belize</a>
-				</h4>
-				Two weeks on an island off the coast of Belize, studying fish, coral reefs and hunting invasive species.
-			</div>
-						
-			
-			</div>	
-</div>					
-			
-	</div>
-	</div>		
-	</div>
-	<!--end projects-->	
+	<!--end projects-->
 
 
 	<!--travel-->
-	<a class = "nav-snap" id ="travel" style="padding-top:30px"></a>
-		
+	<a class="nav-snap" id="travel" style="padding-top:30px"></a>
+
 	<div class="container">
-	<div class = "body-text">
-	<br>
-	<h1 class="text-center"> Travel </h1>
+		<div class="body-text">
+			<br>
+			<h1 class="text-center"> Travel </h1>
+		</div>
+		<div id="map"></div>
+		<script>
+			function initMap() {
+
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 2,
+					center: { lat: 40.716737, lng: -39.765353 }
+				});
+				var importantPin = {
+					url: 'images/simpleBlueIcon.svg',
+					scaledSize: new google.maps.Size(53, 46)
+				};
+
+				//homePin looks terrible on map
+				var homePin = {
+					url: 'images/home.png',
+					scaledSize: new google.maps.Size(53, 46)
+				};
+
+
+				//home, maybe put a special icon?
+
+				var mtl = { lat: 45.5017, lng: -73.5673 };
+				var marker = new google.maps.Marker({
+					position: mtl,
+					map: map,
+					title: "Home",
+					icon: importantPin
+
+				});
+
+
+				//These will appear as plain icons
+				var places = [
+
+					//NA
+					["Arizona", 33.4484, -112.0740],
+					["Cancun", 21.1619, -86.8515],
+					["Saskatoon", 52.1332, -106.6700],
+					["Loon Lake", 54.0246945, -109.220338],
+					["Honolulu", 21.3069, -157.8583],
+					["Costa Rica", 9.7489, -83.7534],
+					["Puerto Rico", 18.2208, -66.5901],
+					["Wildwood", 38.9918, -74.8149],
+					["Myrtle Beach", 33.6891, -78.8867],
+					["Outer Banks", 35.5585, -75.4665],
+					["Orlando", 28.5383, -81.3792],
+					["Key Largo", 25.0865, -80.4473],
+					["Loon Mountain", 44.0360, -71.6214],
+					["New York", 40.7128, -74.0059],
+					["Ottawa", 45.4215, -75.6972],
+					["Toronto", 43.6532, -79.3832],
+					["Banff", 51.1784, -115.5708],
+					["Edmonton", 53.5444, -113.4909],
+					["Jasper", 52.8737, -118.0814],
+					["Calgary", 51.0486, -114.0708],
+					["Albuquerque", 35.0844, -106.6504],
+
+					//EU
+					["Prague", 50.0755, 14.4378],
+					["Berlin", 52.5200, 13.4050],
+					["Hamburg", 53.5511, 9.9937],
+					["Munich", 48.1351, 11.5820],
+					["Cologne", 50.9375, 6.9603],
+					["Heidelberg", 49.3988, 8.6724],
+					["Dresden", 51.0504, 13.7373],
+					["Frankfurt", 50.1109, 8.6821],
+					["Stuttgart", 48.7758, 9.1829],
+					["Paris", 48.8566, 2.3522],
+					["Strasbourg", 48.5734, 7.7521],
+					["Brussels", 50.8503, 4.3517],
+					["Luxembourg", 49.6116, 6.1319],
+					["Salzburg", 47.8095, 13.0550],
+					["Amsterdam", 52.3702, 4.8952],
+					["Rotterdam", 51.9244, 4.4777],
+
+				];
+
+				//These places will have special icons and pages linked to them
+				var importantPlaces = [
+					["Belize", 17.1899, -88.4976],
+					["Kaiserslautern", 49.4401, 7.7491]
+				];
+
+				for (var i = 0; i < places.length; i++) {
+					var place = places[i];
+					var marker = new google.maps.Marker({
+						position: { lat: place[1], lng: place[2] },
+						map: map,
+						title: place[0],
+
+					});
+				}
+
+				for (var i = 0; i < importantPlaces.length; i++) {
+					var importantPlace = importantPlaces[i];
+					var marker = new google.maps.Marker({
+						position: { lat: importantPlace[1], lng: importantPlace[2] },
+						map: map,
+						title: importantPlace[0],
+						icon: importantPin,
+
+					});
+				}
+			}
+		</script>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDibt9Bd5x_uAaNV5I1rDGIQj4Bg9V5T7I&callback=initMap">
+			</script>
 	</div>
-	<div id="map"></div>
-	<script>
-      function initMap() {      
-		
-        var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 2,
-		center: {lat:40.716737, lng:-39.765353}
-        });
-		var importantPin = {
-							url: 'images/simpleBlueIcon.svg',
-							scaledSize: new google.maps.Size(53,46)	
-						  };
 
-		//homePin looks terrible on map
-		var homePin = {
-						url: 'images/home.png',
-						scaledSize: new google.maps.Size(53,46)	
-						};
-					
-		
-		//home, maybe put a special icon?
-	
-		var mtl = {lat:45.5017, lng:-73.5673};
-        var marker = new google.maps.Marker({
-          position: mtl,
-          map: map,
-		title: "Home",
-		icon:importantPin
 
-        });	
-		
-
-		//These will appear as plain icons
-		var places = [
-		
-		//NA
-		["Arizona", 33.4484, -112.0740],
-		["Cancun", 21.1619, -86.8515],
-		["Saskatoon",52.1332, -106.6700],
-		["Loon Lake", 54.0246945,-109.220338],
-		["Honolulu", 21.3069, -157.8583],
-		["Costa Rica", 9.7489, -83.7534],
-		["Puerto Rico", 18.2208, -66.5901],
-		["Wildwood", 38.9918, -74.8149],
-		["Myrtle Beach", 33.6891, -78.8867],
-		["Outer Banks", 35.5585, -75.4665],
-		["Orlando", 28.5383, -81.3792],
-		["Key Largo", 25.0865, -80.4473],
-		["Loon Mountain", 44.0360, -71.6214],
-		["New York", 40.7128, -74.0059],
-		["Ottawa", 45.4215, -75.6972],
-		["Toronto", 43.6532, -79.3832],
-		["Banff", 51.1784,-115.5708],
-		["Edmonton", 53.5444, -113.4909],
-		["Jasper", 52.8737, -118.0814],
-		["Calgary", 51.0486, -114.0708],
-		["Albuquerque", 35.0844, -106.6504],
-		
-		//EU
-		["Prague", 50.0755, 14.4378],
-		["Berlin", 52.5200, 13.4050],
-		["Hamburg", 53.5511, 9.9937],
-		["Munich", 48.1351, 11.5820],
-		["Cologne", 50.9375, 6.9603],
-		["Heidelberg", 49.3988, 8.6724],
-		["Dresden", 51.0504, 13.7373],
-		["Frankfurt", 50.1109, 8.6821],
-		["Stuttgart", 48.7758, 9.1829],
-		["Paris", 48.8566 , 2.3522],
-		["Strasbourg", 48.5734, 7.7521],
-		["Brussels", 50.8503, 4.3517],
-		["Luxembourg", 49.6116, 6.1319],
-		["Salzburg", 47.8095, 13.0550],
-		["Amsterdam", 52.3702, 4.8952],
-		["Rotterdam", 51.9244, 4.4777],
-		
-		];
-		
-		//These places will have special icons and pages linked to them 
-		var importantPlaces = [
-		["Belize", 17.1899, -88.4976],
-		["Kaiserslautern", 49.4401, 7.7491]
-		];
-		
-		for (var i = 0; i < places.length; i++) {
-			var place = places[i];
-			var marker = new google.maps.Marker({
-			  position: {lat: place[1], lng: place[2]},
-			  map: map,
-			  title: place[0],
-			
-			});
-		}
-
-		for (var i = 0; i < importantPlaces.length; i++) {
-			var importantPlace = importantPlaces[i];
-			var marker = new google.maps.Marker({
-			  position: {lat: importantPlace[1], lng: importantPlace[2]},
-			  map: map,
-			  title: importantPlace[0],
-			icon: importantPin,
-
-			});
-		}
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDibt9Bd5x_uAaNV5I1rDGIQj4Bg9V5T7I&callback=initMap">
-    </script>
-	</div>
-	
-	
 	<!-- end main body-->
-	
+
 	<!--end  travel-->
-	
+
 	<!-- end main body-->
-		<footer class="footer" style="padding-top:75px">
-      <div class="container">
-        <p class="text-muted"></p>
-      </div>
-    </footer>
-	</body>
+	<footer class="footer" style="padding-top:75px">
+		<div class="container">
+			<p class="text-muted"></p>
+		</div>
+	</footer>
+</body>

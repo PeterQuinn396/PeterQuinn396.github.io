@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Peter Quinn">
+	<title>Peter Quinn - Projects</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Custom Style overwrites -->
+	<link rel="stylesheet" href="../../../../css/style.css">
+
+	<!-- Scripts -->
+	<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5GXSD3VKH7"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-5GXSD3VKH7');
+	</script>
+	<!-- End scripts -->
+
+</head>
+
+<body>
+
+
+	<!-- Nav Bar -->
+	<div class="nav-spacer" id="top"></div>
+	<nav class="navbar fixed-top navbar-expand-sm navbar-toggler navbar-dark navback">
+		<a class="navbar-brand" href="../../../../index.html#home" style="color:white; font-size:25px">Peter Quinn</a>
+
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../../../../index.html#home">Home <span
+							class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../../../index.html#bio">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../../../index.html#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../../../index.html#travel">Travel</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--end nav bar -->
+
+	<!--main body-->
+	<div class="container">
+
+		<div class="jumbotron"
+			style="background-image:url(images/concrete-wall-with-flowers.jpg); background-size:cover">
+			<h1 style="color:black">LED Wedding Dress</h1>
+			<h3 style="color:black"><br>Winter 2022 / Spring 2023</h3>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="body-text col-sm-12 center">
+
+			<h3 style="padding-top:15px">Getting Started</h3>
+
+			<p>
+				This project got started when my good friend Catherine asked me to help her make her wedding dress. At
+				first, I was a little confused, since I have no sewing ability whatsoever, but it made much more sense
+				when she explained that she wanted to have some LEDs light up her skirt!
+			</p>
+
+			<p>
+				We sketched out a few ideas on paper to see how things might fit together, and started pulling apart
+				some LED fairy lights from Costco. These 5m strands were really cool; they can either be white or
+				multicoloured, depending on which way the current is driven through the diodes. We figured that would
+				stick a few of those in the skirt fabric, wire them up to a little control board, and hide a battery
+				pack somewhere. Between the three degrees in electrical engineering between the two of us, we figured it
+				would't be too bad!
+			</p>
+
+			<p>
+				We ended up working on this project from around September 2022 until the wedding in June, 2023.
+			</p>
+
+			<p>
+				The final product has approximately 300 LEDs in it, on 30 meters of wire, run throughout the skirt. An
+				ESP32 board controlled six H-bridges with a pile of C code I wrote, to power the LED strands with
+				reversible current for selecting white or coloured. This board was hidden in a 3D printed case, and was
+				hidden out of sight in a pocket in the dress. Catherine and her mom sewed two metal buttons onto the
+				back of the skirt which we hooked up to capacitive touch sensors on the ESP32 to control the colour and
+				select from five patterns for the lights. The whole thing was powered by a cell phone battery pack that
+				went into another pocket in the dress.
+			</p>
+
+			<p>
+				Anyways, June 17th, day of the wedding, I actually found a date, show time! Long story short, everything
+				worked perfectly! I did not have to break out the soldering iron or other tools I had stashed in the
+				back of my friend's car. Catherine did her grand entrance at the reception with the white LED lights on,
+				and it really wow'ed the crowd! The multicoloured “party mode” came on when the dancing started later in
+				the night.
+			</p>
+
+
+			<h3 style="padding-top:15px">Possible Improvements</h3>
+			<p>
+				Looking back on the project, on what I might improve, I can think of a few things:
+			</p>
+
+			<p>
+			<ul>
+				<li>Replace the hand soldered proto-board with a dedicated PCB. I think this would shrink the form
+					factor by
+					a decent amount. Extra components from the ESP32 board could be omitted, like the bluetooth and WiFi
+					modules, which should save space and cost. Some of my solder joints were also a little weak, and
+					caused
+					some small flickering during some of the more energetic dance moves.</li>
+
+				<li>Improve how the LED strands connect to the controller board. These could be a lot more robust than
+					the
+					little breadboard wires plugged onto pins, even if the case did hold those in place while the lid
+					was
+					closed. Something like JST connectors would probably work well.</li>
+
+				<li>Swap the capacitive buttons for something a little more reliable. The capacitive touch sensors
+					were great, but had a bit of tendency to trip accidentally. They have a software set threshold for
+					triggering, which requires some fine-tuning, and unexpected things like sitting on a metal chair or
+					things getting humid can trigger false positives.</li>
+			</ul>
+			</p>
+
+
+			<!--
+			<div style="text-align:center">
+				<a href="https://github.com/PeterQuinn396/LED-Dress" class="btn btn-default btn-lg" target="_"> <span
+						class="fa fa-github fa-lg"></span> Code (might be private)</a>
+			</div>
+			-->
+
+			<h3 style="padding-top:15px; padding-bottom:15px">Build Montage</h3>
+
+
+			<div style="display: flex; justify-content: center; margin-bottom: 15px;">
+				<div class="embed-responsive embed-responsive-16by9" style="max-width: 800px;">
+					<iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/Lcx9EJA3uSw"></iframe>
+				</div>
+			</div>
+			<p style="text-align:center">First time turning on the lights</p>
+
+			<div class="row" style="display: flex; justify-content: center; padding-bottom: 15px;">
+				<div style="width: 40%">
+					<img src="images/board1.jpg" class="mx-auto img-responsive img-rounded" alt="measurement"
+						style="width: 400px; height: 500px; padding-top: 25px; padding-bottom: 15px; overflow: hidden; object-fit: cover;">
+				</div>
+				<div style="width: 40%">
+					<img src="images/board2.jpg" class="mx-auto img-responsive img-rounded" alt="measurement"
+						style="width: 400px; height: 500px; padding-top: 25px; padding-bottom: 15px; overflow: hidden; object-fit: cover;">
+				</div>
+			</div>
+			<p style="text-align:center">Fully soldered protoboard. The ESP32 board controls 6 H-bridges (red parts)
+				with PWM signals to drive current bi-directionally through
+				the LED strips either white or colored</p>
+
+			<div style="display: flex; justify-content: center; padding-bottom: 15px;">
+				<div class="embed-responsive embed-responsive-16by9" style="max-width: 800px;">
+					<iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/XW9BTdvz7Yc"></iframe>
+				</div>
+			</div>
+			<p style="text-align:center">Controlling 6 LED strips in a rotating wave pattern</p>
+
+
+			<div class="row">
+				<img src="images/enclosure.jpg" class="mx-auto img-responsive img-rounded" alt="measurement"
+					style="height:100%;  width: 600px; padding-top: 25px; padding-bottom: 15px">
+			</div>
+			<p style="text-align:center">Board placed into its 3D printed enclosure</p>
+
+
+			<div class="row" style="display: flex; justify-content: center; padding-bottom: 15px;">
+				<div style="width: 40%;">
+					<model-viewer src="models/bottom.glb" alt="bottom 3D Model" style="width: 100%; min-height: 300px;"
+						shadow-intensity="2" camera-controls touch-action="pan-y" auto-rotate auto-rotate-delay="1500"
+						rotation-per-second="30deg" interaction-prompt="none"></model-viewer>
+				</div>
+				<div style="width: 40%;">
+					<model-viewer src="models/top.glb" alt="top 3D Model" style="width: 100%;  min-height: 300px;"
+						shadow-intensity="2" camera-controls touch-action="pan-y" auto-rotate auto-rotate-delay="1500"
+						rotation-per-second="30deg" interaction-prompt="none"></model-viewer>
+				</div>
+			</div>
+			<div style="display: flex; justify-content: center;">
+				<p style="text-align:center; width: 60%;">3D Models of top and bottom pieces of enclosure. The top
+					slides
+					along built in rails on the bottom and friction fits snugly into place (like a TV remote battery
+					cover)
+				</p>
+			</div>
+
+			<div class="row" style="display: flex; justify-content: center; padding-bottom: 15px;">
+				<div style="width: 30%;">
+					<img src="images/model.jpg" class="mx-auto img-responsive img-rounded" alt="measurement"
+						style="height:100%;  width: 300px; padding-top: 25px; padding-bottom: 15px; overflow: hidden; object-fit: cover;">
+				</div>
+				<div style="width: 30%;">
+					<img src="images/dress1.jpg" class="mx-auto img-responsive img-rounded" alt="measurement"
+						style="height:100%;  width: 300px; padding-top: 25px; padding-bottom: 15px; overflow: hidden; object-fit: cover;">
+				</div>
+				<div style="width: 30%;">
+					<img src="images/dress2.jpg" class="mx-auto img-responsive img-rounded" alt="measurement"
+						style="height:100%;  width: 300px; padding-top: 25px; padding-bottom: 15px; overflow: hidden; object-fit: cover;">
+				</div>
+			</div>
+			<p style="text-align:center">Figuring out how to fit 30m of LEDs in a skirt</p>
+
+			<div class="row" style="display: flex; justify-content: center; padding-bottom: 15px;">
+				<div style="width: 40%">
+					<img src="images/final_dress.jpg" class="mx-auto img-responsive img-rounded" alt="measurement"
+						style="height:600px;  width: 400px; padding-top: 25px; padding-bottom: 15px; overflow: hidden; object-fit: cover;">
+				</div>
+				<div style="width: 40%">
+					<img src="images/party_mode.jpg" class="mx-auto img-responsive img-rounded" alt="measurement"
+						style="height:600px;  width: 400px; padding-top: 25px; padding-bottom: 15px; overflow: hidden; object-fit: cover;">
+				</div>
+			</div>
+			<p style="text-align:center">Final tests and big day</p>
+
+			<div style="display: flex; justify-content: center; margin-bottom: 15px;">
+				<div class="embed-responsive embed-responsive-16by9" style="max-width: 800px;">
+					<iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/8imMnDecTDo"></iframe>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+
+
+	<!-- end main body-->
+	<footer class="footer" style="padding-top:75px">
+		<div class="container">
+			<p class="text-muted"></p>
+		</div>
+	</footer>
+</body>

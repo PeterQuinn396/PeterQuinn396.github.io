@@ -9,19 +9,19 @@
     <meta name="author" content="Peter Quinn">
     <title>Peter Quinn - DiffCVGP 2020</title>
 
-	<!-- Bootstrap CSS -->	
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Custom Style overwrites -->
     <link rel="stylesheet" href="../../../../css/style.css">
 
     <!-- Scripts -->
-    
+
     <!-- Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5GXSD3VKH7"></script>
 	<script>
@@ -32,25 +32,25 @@
 	  gtag('config', 'G-5GXSD3VKH7');
 	</script>
 	<!-- End scripts -->
-	
+
 	</head>
-	
+
 	<body>
-	 	 
-		 
+
+
 	 <!-- Nav Bar -->
 	 <div class="nav-spacer" id="top"></div>
-	 <nav class="navbar fixed-top navbar-expand-sm navbar-toggler navbar-dark navback" >	
-		<a class="navbar-brand"  href="../../../../index.html#home" style="color:white; font-size:25px">Peter Quinn</a>	 
-		
+	 <nav class="navbar fixed-top navbar-expand-sm navbar-toggler navbar-dark navback" >
+		<a class="navbar-brand"  href="../../../../index.html#home" style="color:white; font-size:25px">Peter Quinn</a>
+
 		<!-- Toggler/collapsibe Button -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		
+
 		<!-- Navbar links -->
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-		<ul class="navbar-nav mr-auto">				
+		<ul class="navbar-nav mr-auto">
 		  <li class="nav-item">
 			<a class="nav-link" href="../../../../index.html#home">Home <span class="sr-only">(current)</span></a>
 		  </li>
@@ -62,37 +62,39 @@
 		  </li>
 		   <li class="nav-item">
 			<a class="nav-link" href="../../../../index.html#travel">Travel</a>
-		  </li>		 
+		  </li>
 		</ul>
 		</div>
-	</nav>	
+	</nav>
 	<!--end nav bar -->
 
 	<!--main body-->
 	<div class="container">
-	
+
 	<div class = "jumbotron" style="background-image:url(geometric.jpg); background-size:cover">
 		<h1 style="color:black">Differentiable Path Tracing by Regularizing Discontinuities
 			(DiffCVGP at NeurIPS 2020)</h1>
 		<h3 style="color:black"><br>December 2020</h3>
-		
+
 	</div>
 	</div>
-	
+
 	<div class="container">
-	<div class="body-text col-sm-12 center">	
+	<div class="body-text col-sm-12 center">
 
 		<h3 style="padding-top:15px">Differentiable Path Tracing by Regularizing Discontinuities</h3>
-				
-		This paper was accepted at the NeurIPS 2020 Workshop for Differentiable Computer Vision, Graphics and Physics and presented during a virtual poster session over GatherTown. A brief video summary of the paper was also submitted. 
-		
+
+		This paper was accepted at the NeurIPS 2020 Workshop for Differentiable Computer Vision, Graphics and Physics and presented during a virtual poster session over GatherTown. A brief video summary of the paper was also submitted.
+
 		<h3 style="padding-top:15px">Abstract</h3>
-		<p>Recently, viewing computer vision as an inverse rendering problem has led to a growing interest in differentiable rendering. We introduce a novel differentiable path tracing algorithm where discontinuities in the rendering process are regularized through blurring of the geometry. Our differentiable renderer implements full global illumination and has parameters for controlling the regularization, which allows for some control over the smoothness of the loss landscape. We successfully apply our system to solve several examples of challenging inverse rendering optimization problems that involve more complex light transport scenarios that cannot be handled by rasterization-based differentiable renderers.</p> 
-		
+		<p>Recently, viewing computer vision as an inverse rendering problem has led to a growing interest in differentiable rendering. We introduce a novel differentiable path tracing algorithm where discontinuities in the rendering process are regularized through blurring of the geometry. Our differentiable renderer implements full global illumination and has parameters for controlling the regularization, which allows for some control over the smoothness of the loss landscape. We successfully apply our system to solve several examples of challenging inverse rendering optimization problems that involve more complex light transport scenarios that cannot be handled by rasterization-based differentiable renderers.</p>
+
 		<div style="text-align:center" >
-		<a href="Differentiable_Rendering_nips2020.pdf" class="btn btn-default btn-lg" target="_"> <span class="fa fa-file-text fa-lg"></span> Full Paper </a> 
+		<a href="Differentiable_Rendering_nips2020.pdf" class="btn btn-default btn-lg" target="_"> <span class="fa fa-file-text fa-lg"></span> Full Paper </a>
 		<a href="Poster.pdf" class="btn btn-default btn-lg" target="_"> <span class="fa fa-area-chart fa-lg"></span> Poster </a>
 		<a href="../../../../diffren/examples.html" class="btn btn-default btn-lg"> <span class="fa fa-list fa-lg"></span> More Examples </a>
+		<a href="https://montrealrobotics.ca/diffcvgp/papers/" class="btn btn-default btn-lg"> <span class="fa fa-map fa-lg"></span> Workshop Page </a>
+
 		</div>
 		<div class="embed-responsive embed-responsive-16by9">
 		<iframe class="embed-responsive-item" style="align:center; padding:15px"
@@ -101,8 +103,8 @@
 		</div>
 		</div>
 	</div>
-	
-		
+
+
 	<!-- end main body-->
 	<footer class="footer" style="padding-top:75px">
       <div class="container">
